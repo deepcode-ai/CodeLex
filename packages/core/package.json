@@ -1,0 +1,50 @@
+{
+  "name": "@codelexjs/core",
+  "type": "module",
+  "version": "3.4.0",
+  "description": "Core of Codelex",
+  "author": "Pine Wu <octref@gmail.com>; Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/deepcode-ai/codelex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcode-ai/codelex.git",
+    "directory": "packages/core"
+  },
+  "bugs": "https://github.com/deepcode-ai/codelex/issues",
+  "keywords": [
+    "codelex"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./textmate": {
+      "types": "./dist/textmate.d.mts",
+      "default": "./dist/textmate.mjs"
+    },
+    "./types": {
+      "types": "./dist/types.d.mts"
+    },
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json",
+    "./*": "./dist/*"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@codelexjs/types": "workspace:*",
+    "@codelexjs/vscode-textmate": "catalog:prod",
+    "@types/hast": "catalog:types",
+    "hast-util-to-html": "catalog:inlined"
+  }
+}

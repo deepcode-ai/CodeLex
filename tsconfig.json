@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext", "DOM"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "rootDir": ".",
+    "paths": {
+      "@codelexjs/core/types": ["./packages/core/src/types.ts"],
+      "@codelexjs/core/wasm-inlined": ["./packages/core/src/wasm.ts"],
+      "@codelexjs/core": ["./packages/core/src/index.ts"],
+      "@codelexjs/transformers": ["./packages/transformers/src/index.ts"],
+      "@codelexjs/twoslash/core": ["./packages/twoslash/src/core.ts"],
+      "@codelexjs/twoslash": ["./packages/twoslash/src/index.ts"],
+      "@codelexjs/vitepress-twoslash/cache-fs": ["./packages/vitepress-twoslash/src/cache-fs.ts"],
+      "@codelexjs/vitepress-twoslash/client": ["./packages/vitepress-twoslash/src/client.ts"],
+      "@codelexjs/vitepress-twoslash": ["./packages/vitepress-twoslash/src/index.ts"],
+      "@codelexjs/markdown-it": ["./packages/markdown-it/src/index.ts"],
+      "@codelexjs/types": ["./packages/types/src/index.ts"],
+      "@codelexjs/engine-javascript": ["./packages/engine-javascript/src/index.ts"],
+      "@codelexjs/engine-oniguruma/wasm-inline": ["./packages/engine-oniguruma/src/wasm-inline.ts"],
+      "@codelexjs/engine-oniguruma": ["./packages/engine-oniguruma/src/index.ts"],
+      "codelex/core": ["./packages/codelex/src/core.ts"],
+      "codelex/wasm": ["./packages/codelex/src/wasm.ts"],
+      "codelex/langs": ["./packages/codelex/src/langs.ts"],
+      "codelex/themes": ["./packages/codelex/src/themes.ts"],
+      "codelex/bundle/web": ["./packages/codelex/src/bundle-web.ts"],
+      "codelex/bundle/full": ["./packages/codelex/src/bundle-full.ts"],
+      "codelex": ["./packages/codelex/src/index.ts"]
+    },
+    "types": ["vite/client", "node"],
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "preserveValueImports": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.mjs",
+    "docs/.vitepress/**/*.ts",
+    "docs/.vitepress/**/*.vue",
+    "eslint.config.js"
+  ],
+  "exclude": [
+    "**/vendor/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/fixtures/**",
+    "tm-grammars-themes/**"
+  ]
+}

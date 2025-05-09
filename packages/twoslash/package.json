@@ -1,0 +1,55 @@
+{
+  "name": "@codelexjs/twoslash",
+  "type": "module",
+  "version": "3.4.0",
+  "description": "Codelex transformer for twoslash",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/deepcode-ai/codelex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcode-ai/codelex.git",
+    "directory": "packages/twoslash"
+  },
+  "bugs": "https://github.com/deepcode-ai/codelex/issues",
+  "keywords": [
+    "codelex",
+    "twoslash"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./core": "./dist/core.mjs",
+    "./style-rich.css": "./style-rich.css",
+    "./style-classic.css": "./style-classic.css",
+    "./*": "./dist/*"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "*.css",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.5.0"
+  },
+  "dependencies": {
+    "@codelexjs/core": "workspace:*",
+    "@codelexjs/types": "workspace:*",
+    "twoslash": "catalog:integrations"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "catalog:icons",
+    "@iconify-json/codicon": "catalog:icons",
+    "@codelexjs/twoslash": "workspace:*",
+    "hast-util-from-html": "catalog:inlined",
+    "typescript": "catalog:cli"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@codelexjs/transformers",
+  "type": "module",
+  "version": "3.4.0",
+  "description": "Collective of common transformers transformers for Codelex",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/deepcode-ai/codelex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcode-ai/codelex.git",
+    "directory": "packages/transformers"
+  },
+  "bugs": "https://github.com/deepcode-ai/codelex/issues",
+  "keywords": [
+    "codelex",
+    "@codelexjs/transformers"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@codelexjs/core": "workspace:*",
+    "@codelexjs/types": "workspace:*"
+  }
+}

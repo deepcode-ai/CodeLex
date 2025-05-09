@@ -1,0 +1,43 @@
+{
+  "name": "@codelexjs/engine-oniguruma",
+  "type": "module",
+  "version": "3.4.0",
+  "description": "Engine for Codelex using Oniguruma RegExp engine in WebAssembly",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/deepcode-ai/codelex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcode-ai/codelex.git",
+    "directory": "packages/engine-oniguruma"
+  },
+  "bugs": "https://github.com/deepcode-ai/codelex/issues",
+  "keywords": [
+    "codelex",
+    "codelex-engine",
+    "oniguruma"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./wasm-inlined": "./dist/wasm-inlined.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "dev": "rollup -cw",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@codelexjs/types": "workspace:*",
+    "@codelexjs/vscode-textmate": "catalog:prod"
+  },
+  "devDependencies": {
+    "vscode-oniguruma": "catalog:inlined"
+  }
+}

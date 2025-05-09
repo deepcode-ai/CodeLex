@@ -1,0 +1,39 @@
+{
+  "name": "@codelexjs/colorized-brackets",
+  "type": "module",
+  "version": "3.4.0",
+  "description": "VSCode-style colorized brackets transformer for Codelex",
+  "author": "Michael Moore <mscottmoore@pm.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/deepcode-ai/codelex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcode-ai/codelex.git",
+    "directory": "packages/colorized-brackets"
+  },
+  "bugs": "https://github.com/deepcode-ai/codelex/issues",
+  "keywords": [
+    "codelex",
+    "@codelexjs/colorized-brackets"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepare": "tsx scripts/prepare.ts",
+    "prepublishOnly": "nr build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "codelex": "workspace:*"
+  }
+}

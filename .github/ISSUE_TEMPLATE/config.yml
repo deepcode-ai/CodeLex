@@ -1,0 +1,13 @@
+contact_links:
+  - name: 🙌 Contribution Guide
+    url: https://github.com/deepcode-ai/codelex/blob/main/CONTRIBUTING.md
+    about: Please read through before making contributions.
+  - name: 🧑‍💻 Contribute to New Grammar
+    url: https://github.com/deepcode-ai/textmate-grammars-themes/#add-a-new-grammar
+    about: Codelex uses grammars collected by `tm-grammars`. Contribute there will inherit to Codelex.
+  - name: 🌈 Contribute to New Theme
+    url: https://github.com/deepcode-ai/textmate-grammars-themes/#add-a-new-grammar
+    about: Codelex uses themes collected by `tm-themes`. Contribute there will inherit to Codelex.
+  - name: ⁉️ Why and How to make a reproduction?
+    url: https://antfu.me/posts/why-reproductions-are-required
+    about: Reproduction is very important for maintainer to help on your issues!
