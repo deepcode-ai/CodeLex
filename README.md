@@ -1,6 +1,4 @@
-<img src="https://raw.githubusercontent.com/codeLex/codelex/main/docs/public/logo.svg" width="150" alt="Codelex Logo" />
-
-# Codelex 式
+# CodeLex
 
 [![NPM version](https://img.shields.io/npm/v/codelex?color=32A9C3&labelColor=1B3C4A&label=npm)](https://www.npmjs.com/package/codelex)
 [![NPM downloads](https://img.shields.io/npm/dm/codelex?color=32A9C3&labelColor=1B3C4A&label=downloads)](https://www.npmjs.com/package/codelex)
