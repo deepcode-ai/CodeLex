@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { MatchAlgorithmOptions } from '../shared/notation-transformer'
 import { transformerNotationMap } from './notation-map'
 
@@ -38,6 +38,6 @@ export function transformerNotationDiff(
       classActivePre,
       matchAlgorithm: options.matchAlgorithm,
     },
-    '@codelexjs/transformers:notation-diff',
+    '@codelex/transformers:notation-diff',
   )
 }

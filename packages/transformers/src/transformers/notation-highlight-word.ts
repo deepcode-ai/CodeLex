@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { MatchAlgorithmOptions } from '../shared/notation-transformer'
 import { highlightWordInLine } from '../shared/highlight-word'
 import { createCommentNotationTransformer } from '../shared/notation-transformer'
@@ -23,7 +23,7 @@ export function transformerNotationWordHighlight(
   } = options
 
   return createCommentNotationTransformer(
-    '@codelexjs/transformers:notation-highlight-word',
+    '@codelex/transformers:notation-highlight-word',
     /\s*\[!code word:((?:\\.|[^:\]])+)(:\d+)?\]/,
     function ([_, word, range], _line, comment, lines, index) {
       const lineNum = range ? Number.parseInt(range.slice(1), 10) : lines.length

@@ -1,4 +1,4 @@
-import type { CodelexTransformerContextCommon } from '@codelexjs/types'
+import type { CodelexTransformerContextCommon } from '@codelex/types'
 import type { Element, ElementContent, Text } from 'hast'
 import type { NodeError, NodeHover, NodeQuery } from 'twoslash'
 import type { TwoslashRenderer } from './types'

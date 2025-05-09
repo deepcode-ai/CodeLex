@@ -1,4 +1,4 @@
-import type { StateStack } from '@codelexjs/vscode-textmate'
+import type { StateStack } from '@codelex/vscode-textmate'
 import type monacoNs from 'monaco-editor-core'
 
 export class TokenizerState implements monacoNs.languages.IState {

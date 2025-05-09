@@ -20,9 +20,9 @@ export default defineBuildConfig({
   ],
   externals: [
     'codelex/wasm',
-    '@codelexjs/types',
+    '@codelex/types',
     'hast',
-    /^@codelexjs[/\\].*/g,
+    /^@codelex[/\\].*/g,
     /[/\\](langs|themes)[/\\]/g,
   ],
   declaration: 'node16',
@@ -42,7 +42,7 @@ export default defineBuildConfig({
       await Promise.all(
         langs.map(file => fs.writeFile(
           join(dirname(file), `${basename(file, '.mjs')}.d.mts`),
-          'import { LanguageRegistration } from \'@codelexjs/core\';declare const reg: LanguageRegistration[];export default reg',
+          'import { LanguageRegistration } from \'@codelex/core\';declare const reg: LanguageRegistration[];export default reg',
           'utf-8',
         )),
       )
@@ -50,7 +50,7 @@ export default defineBuildConfig({
       await Promise.all(
         themes.map(file => fs.writeFile(
           join(dirname(file), `${basename(file, '.mjs')}.d.mts`),
-          'import { ThemeRegistrationRaw } from \'@codelexjs/core\';declare const reg: ThemeRegistrationRaw;export default reg',
+          'import { ThemeRegistrationRaw } from \'@codelex/core\';declare const reg: ThemeRegistrationRaw;export default reg',
           'utf-8',
         ),
         ),

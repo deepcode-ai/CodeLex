@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/engine-oniguruma",
+  "name": "@codelex/engine-oniguruma",
   "type": "module",
   "version": "3.4.0",
   "description": "Engine for Codelex using Oniguruma RegExp engine in WebAssembly",
@@ -34,8 +34,8 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/types": "workspace:*",
-    "@codelexjs/vscode-textmate": "catalog:prod"
+    "@codelex/types": "workspace:*",
+    "@codelex/vscode-textmate": "catalog:prod"
   },
   "devDependencies": {
     "vscode-oniguruma": "catalog:inlined"

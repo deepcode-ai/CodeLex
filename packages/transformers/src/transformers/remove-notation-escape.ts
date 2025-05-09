@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 
 /**
  * Remove notation escapes.
@@ -7,7 +7,7 @@ import type { CodelexTransformer } from '@codelexjs/types'
  */
 export function transformerRemoveNotationEscape(): CodelexTransformer {
   return {
-    name: '@codelexjs/transformers:remove-notation-escape',
+    name: '@codelex/transformers:remove-notation-escape',
     postprocess(code) {
       return code.replace(/\[\\!code/g, '[!code')
     },

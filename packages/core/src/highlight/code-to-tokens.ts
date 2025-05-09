@@ -1,5 +1,5 @@
-import type { CodeToTokensOptions, GrammarState, CodelexInternal, ThemedToken, TokensResult } from '@codelexjs/types'
-import { CodelexError } from '@codelexjs/types'
+import type { CodeToTokensOptions, GrammarState, CodelexInternal, ThemedToken, TokensResult } from '@codelex/types'
+import { CodelexError } from '@codelex/types'
 import { getLastGrammarStateFromMap, setLastGrammarStateToMap } from '../textmate/grammar-state'
 import { applyColorReplacements, flatTokenVariants, resolveColorReplacements } from '../utils'
 import { codeToTokensBase } from './code-to-tokens-base'

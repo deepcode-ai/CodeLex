@@ -1,4 +1,4 @@
-import type { LanguageRegistration } from '@codelexjs/core'
+import type { LanguageRegistration } from '@codelex/core'
 import fg from 'fast-glob'
 import fs from 'fs-extra'
 import { grammars, injections } from 'tm-grammars'
@@ -137,7 +137,7 @@ export { default } from './${json.name}.mjs'
       exportedFileNames.push(name)
       await fs.writeFile(
         `./dist/${name}.d.mts`,
-        `import type { LanguageRegistration } from '@codelexjs/types'
+        `import type { LanguageRegistration } from '@codelex/types'
 const langs: LanguageRegistration []
 export default langs
 `,
@@ -211,7 +211,7 @@ export const languageAliasNames: string[]
         id: i.name,
         name: i.displayName || i.name,
         aliases: i.aliases,
-        import: `__(() => import('@codelexjs/langs/${i.name}')) as DynamicImportLanguageRegistration__`,
+        import: `__(() => import('@codelex/langs/${i.name}')) as DynamicImportLanguageRegistration__`,
       }) as const)
       .sort((a, b) => a.id.localeCompare(b.id))
 
@@ -222,7 +222,7 @@ export const languageAliasNames: string[]
     await fs.writeFile(
       `../codelex/src/${fileName}.ts`,
       `${COMMENT_HEAD}
-import type { DynamicImportLanguageRegistration, BundledLanguageInfo } from '@codelexjs/types'
+import type { DynamicImportLanguageRegistration, BundledLanguageInfo } from '@codelex/types'
 
 export const bundledLanguagesInfo: BundledLanguageInfo[] = ${JSON.stringify(info, null, 2).replace(/"__|__"/g, '').replace(/"/g, '\'')}
 

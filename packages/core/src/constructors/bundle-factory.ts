@@ -17,10 +17,10 @@ import type {
   ThemedTokenWithVariants,
   ThemeInput,
   TokensResult,
-} from '@codelexjs/types'
+} from '@codelex/types'
 
 import type { Root } from 'hast'
-import { CodelexError } from '@codelexjs/types'
+import { CodelexError } from '@codelex/types'
 
 import { isSpecialLang, isSpecialTheme } from '../utils'
 import { createHighlighterCore } from './highlighter'
@@ -32,11 +32,11 @@ import { createHighlighterCore } from './highlighter'
  * ```ts
  * const createHighlighter = createdBundledHighlighter({
  *   langs: {
- *     typescript: () => import('@codelexjs/langs/typescript'),
+ *     typescript: () => import('@codelex/langs/typescript'),
  *     // ...
  *   },
  *   themes: {
- *     nord: () => import('@codelexjs/themes/nord'),
+ *     nord: () => import('@codelex/themes/nord'),
  *     // ...
  *   },
  *   engine: () => createOnigurumaEngine(), // or createJavaScriptRegexEngine()

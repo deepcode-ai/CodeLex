@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/rehype",
+  "name": "@codelex/rehype",
   "type": "module",
   "version": "3.4.0",
   "description": "rehype integration for codelex",
@@ -33,7 +33,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/types": "workspace:*",
+    "@codelex/types": "workspace:*",
     "@types/hast": "catalog:types",
     "hast-util-to-string": "catalog:inlined",
     "codelex": "workspace:*",
@@ -41,7 +41,7 @@
     "unist-util-visit": "catalog:integrations"
   },
   "devDependencies": {
-    "@codelexjs/transformers": "workspace:*",
+    "@codelex/transformers": "workspace:*",
     "rehype-raw": "catalog:integrations",
     "rehype-stringify": "catalog:integrations",
     "remark-parse": "catalog:integrations",

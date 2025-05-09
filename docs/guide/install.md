@@ -233,7 +233,7 @@ To use `codelex` in the browser via CDN, you can use [esm.run](https://esm.run) 
 </body>
 ```
 
-It's quite efficient as it will only load the languages and themes on demand. For the code snippet above, only four requests will be fired (`codelex`, `@codelexjs/themes/vitesse-light`, `@codelexjs/langs/javascript`, `codelex/wasm.mjs`), with around 200KB data transferred in total.
+It's quite efficient as it will only load the languages and themes on demand. For the code snippet above, only four requests will be fired (`codelex`, `@codelex/themes/vitesse-light`, `@codelex/langs/javascript`, `codelex/wasm.mjs`), with around 200KB data transferred in total.
 
 [Demo](https://jsfiddle.net/t7brz23v/)
 
@@ -245,8 +245,8 @@ Meanwhile, it's also recommended to use the [Fine-grained Bundle](#fine-grained-
 
 ```ts twoslash theme:nord
 // @noErrors
-import js from '@codelexjs/langs/javascript'
-import nord from '@codelexjs/themes/nord'
+import js from '@codelex/langs/javascript'
+import nord from '@codelex/themes/nord'
 import { createHighlighterCore, loadWasm } from 'codelex/core'
 
 // import wasm as assets

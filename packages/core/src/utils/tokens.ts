@@ -1,5 +1,5 @@
-import type { ThemedToken, ThemedTokenWithVariants, TokenStyles } from '@codelexjs/types'
-import { FontStyle } from '@codelexjs/vscode-textmate'
+import type { ThemedToken, ThemedTokenWithVariants, TokenStyles } from '@codelex/types'
+import { FontStyle } from '@codelex/vscode-textmate'
 
 /**
  * Split a token into multiple tokens by given offsets.

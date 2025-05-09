@@ -1,4 +1,4 @@
-import type { CodelexTransformer, TransformerOptions } from '@codelexjs/types'
+import type { CodelexTransformer, TransformerOptions } from '@codelex/types'
 import { transformerDecorations } from '../transformer-decorations'
 
 const builtInTransformers: CodelexTransformer[] = [

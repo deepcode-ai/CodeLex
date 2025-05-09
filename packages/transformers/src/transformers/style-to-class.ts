@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 
 export interface TransformerStyleToClassOptions {
   /**
@@ -61,7 +61,7 @@ export function transformerStyleToClass(options: TransformerStyleToClassOptions 
   }
 
   return {
-    name: '@codelexjs/transformers:style-to-class',
+    name: '@codelex/transformers:style-to-class',
     pre(t) {
       if (!t.properties.style)
         return

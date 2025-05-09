@@ -1,4 +1,4 @@
-# @codelexjs/types
+# @codelex/types
 
 Types for Codelex.
 

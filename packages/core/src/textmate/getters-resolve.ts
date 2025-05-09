@@ -5,7 +5,7 @@ import type {
   SpecialTheme,
   ThemeInput,
   ThemeRegistrationResolved,
-} from '@codelexjs/types'
+} from '@codelex/types'
 
 import { isSpecialLang, isSpecialTheme, normalizeGetter } from '../utils'
 import { normalizeTheme } from './normalize-theme'

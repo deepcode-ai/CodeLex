@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/langs-precompiled",
+  "name": "@codelex/langs-precompiled",
   "type": "module",
   "version": "3.4.0",
   "description": "TextMate grammars for Codelex in ESM",
@@ -353,7 +353,7 @@
     "prepublishOnly": "nr prepare"
   },
   "dependencies": {
-    "@codelexjs/types": "workspace:*",
+    "@codelex/types": "workspace:*",
     "oniguruma-to-es": "catalog:prod"
   },
   "devDependencies": {

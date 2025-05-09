@@ -35,7 +35,7 @@ The pre-built bundles are for easy usage, and mostly intended for a Node.js envi
 
 **Avoid importing `codelex`, `codelex/bundle/full`, `codelex/bundle/web` directly**.
 
-Instead, import fine-grained modules like `codelex/core`, `codelex/engine/javascript`, `@codelexjs/langs/typescript`, `@codelexjs/themes/dark-plus`, etc.
+Instead, import fine-grained modules like `codelex/core`, `codelex/engine/javascript`, `@codelex/langs/typescript`, `@codelex/themes/dark-plus`, etc.
 
 ```ts
 import { createHighlighterCore } from 'codelex/core'
@@ -43,13 +43,13 @@ import { createJavaScriptRegexEngine } from 'codelex/engine/javascript'
 
 const highlighter = await createHighlighterCore({
   themes: [
-    import('@codelexjs/themes/nord'),
-    import('@codelexjs/themes/dark-plus'),
+    import('@codelex/themes/nord'),
+    import('@codelex/themes/dark-plus'),
     // ...
   ],
   langs: [
-    import('@codelexjs/langs/typescript'),
-    import('@codelexjs/langs/javascript'),
+    import('@codelex/langs/typescript'),
+    import('@codelex/langs/javascript'),
     // ...
   ],
   engine: createJavaScriptRegexEngine()

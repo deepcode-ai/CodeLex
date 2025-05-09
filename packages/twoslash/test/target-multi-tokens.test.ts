@@ -1,4 +1,4 @@
-import { transformerTwoslash } from '@codelexjs/twoslash'
+import { transformerTwoslash } from '@codelex/twoslash'
 import { codeToHtml, codeToTokensBase } from 'codelex'
 import { expect, it } from 'vitest'
 

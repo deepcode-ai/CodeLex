@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# @codelexjs/rehype
+# @codelex/rehype
 
-<Badges name="@codelexjs/rehype" />
+<Badges name="@codelex/rehype" />
 
 [rehype](https://github.com/rehypejs/rehype) plugin for Codelex.
 
@@ -13,19 +13,19 @@ outline: deep
 ::: code-group
 
 ```sh [npm]
-npm i -D @codelexjs/rehype
+npm i -D @codelex/rehype
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/rehype
+yarn add -D @codelex/rehype
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/rehype
+pnpm add -D @codelex/rehype
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/rehype
+bun add -D @codelex/rehype
 ```
 
 :::
@@ -34,7 +34,7 @@ bun add -D @codelexjs/rehype
 
 ```ts twoslash
 // @noErrors: true
-import rehypeCodelex from '@codelexjs/rehype'
+import rehypeCodelex from '@codelex/rehype'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
@@ -54,15 +54,15 @@ const file = await unified()
   .process(await fs.readFile('./input.md'))
 ```
 
-The default export of `@codelexjs/rehype` uses a shared instance of `codelex` from `getSingletonHighlighter`, which will persist across processes. If you want full control over the highlighter lifecycle, use [Fine-grained Bundle `@codelexjs/rehype/core`](#fine-grained-bundle) instead.
+The default export of `@codelex/rehype` uses a shared instance of `codelex` from `getSingletonHighlighter`, which will persist across processes. If you want full control over the highlighter lifecycle, use [Fine-grained Bundle `@codelex/rehype/core`](#fine-grained-bundle) instead.
 
 ## Fine-grained Bundle
 
-By default, the full bundle of `codelex` will be imported. If you are using a [fine-grained bundle](/guide/bundles#fine-grained-bundle), you can import `rehypeCodelexFromHighlighter` from `@codelexjs/rehype/core` and pass your own highlighter:
+By default, the full bundle of `codelex` will be imported. If you are using a [fine-grained bundle](/guide/bundles#fine-grained-bundle), you can import `rehypeCodelexFromHighlighter` from `@codelex/rehype/core` and pass your own highlighter:
 
 ```ts twoslash
 // @noErrors: true
-import rehypeCodelexFromHighlighter from '@codelexjs/rehype/core'
+import rehypeCodelexFromHighlighter from '@codelex/rehype/core'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
@@ -73,10 +73,10 @@ import { unified } from 'unified'
 
 const highlighter = await createHighlighterCore({
   themes: [
-    import('@codelexjs/themes/vitesse-light')
+    import('@codelex/themes/vitesse-light')
   ],
   langs: [
-    import('@codelexjs/langs/javascript'),
+    import('@codelex/langs/javascript'),
   ],
   engine: createOnigurumaEngine(() => import('codelex/wasm'))
 })
@@ -128,7 +128,7 @@ Enable `inline` on the Rehype plugin:
 
 ```ts twoslash
 // @noErrors: true
-import rehypeCodelex from '@codelexjs/rehype'
+import rehypeCodelex from '@codelex/rehype'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'

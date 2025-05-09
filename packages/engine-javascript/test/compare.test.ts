@@ -46,8 +46,8 @@ export interface Cases {
 const cases: Cases[] = [
   {
     name: 'beancount',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/beancount'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/beancount'),
     cases: [
       `2012-11-03 * "Transfer to pay credit card"
   Assets:MyBank:Checking            -400.00 USD
@@ -62,8 +62,8 @@ const cases: Cases[] = [
   },
   {
     name: 'json-basic',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/json'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/json'),
     cases: [
       '{"foo":{"bar":1}}',
       '[undefined, null, true, false, 0, 1, 1.1, "foo", [], {}]',
@@ -71,8 +71,8 @@ const cases: Cases[] = [
   },
   {
     name: 'html-basic',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/html'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/html'),
     cases: [
       '<div class="foo">bar</div>',
       '<!DOCTYPE html><html><head><title>foo</title></head><body>bar</body></html>',
@@ -80,24 +80,24 @@ const cases: Cases[] = [
   },
   {
     name: 'ts-basic',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/typescript'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/typescript'),
     cases: [
       'const foo: string = "bar"',
     ],
   },
   {
     name: 'jsonc',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/jsonc'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/jsonc'),
     cases: [
       '// comment\n{"foo":"bar"}',
     ],
   },
   {
     name: 'vue',
-    theme: () => import('@codelexjs/themes/vitesse-dark'),
-    lang: () => import('@codelexjs/langs/vue'),
+    theme: () => import('@codelex/themes/vitesse-dark'),
+    lang: () => import('@codelex/langs/vue'),
     cases: [
       `<script setup>\nimport { ref } from 'vue'\n</script>`,
       `<template>\n<div>{{ foo }}</div>\n</template>`,
@@ -105,8 +105,8 @@ const cases: Cases[] = [
   },
   {
     name: 'toml',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/toml'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/toml'),
     cases: [
       [
         `# This is a TOML document`,
@@ -120,8 +120,8 @@ const cases: Cases[] = [
   },
   {
     name: 'sql',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/sql'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/sql'),
     cases: [
       'SELECT * FROM foo',
       [
@@ -134,8 +134,8 @@ const cases: Cases[] = [
   },
   {
     name: 'markdown',
-    theme: () => import('@codelexjs/themes/nord'),
-    lang: () => import('@codelexjs/langs/markdown'),
+    theme: () => import('@codelex/themes/nord'),
+    lang: () => import('@codelex/langs/markdown'),
     cases: [
       [
         '# Header',
@@ -160,7 +160,7 @@ const cases: Cases[] = [
 ]
 
 describe('cases', async () => {
-  await loadWasm(import('@codelexjs/engine-oniguruma/wasm-inlined'))
+  await loadWasm(import('@codelex/engine-oniguruma/wasm-inlined'))
 
   const resolved = await Promise.all(cases.map(async (c) => {
     const theme = await c.theme().then(r => r.default)

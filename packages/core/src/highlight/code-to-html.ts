@@ -2,7 +2,7 @@ import type {
   CodeToHastOptions,
   CodelexInternal,
   CodelexTransformerContextCommon,
-} from '@codelexjs/types'
+} from '@codelex/types'
 
 import { toHtml } from 'hast-util-to-html'
 

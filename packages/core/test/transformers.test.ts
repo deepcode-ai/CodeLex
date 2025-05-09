@@ -1,14 +1,14 @@
-import { createJavaScriptRegexEngine } from '@codelexjs/engine-javascript'
+import { createJavaScriptRegexEngine } from '@codelex/engine-javascript'
 import { expect, it } from 'vitest'
 import { createHighlighterCore } from '../src'
 
 it('transformers tokens', async () => {
   using codelex = await createHighlighterCore({
     themes: [
-      import('@codelexjs/themes/vitesse-light'),
+      import('@codelex/themes/vitesse-light'),
     ],
     langs: [
-      import('@codelexjs/langs/javascript'),
+      import('@codelex/langs/javascript'),
     ],
     engine: createJavaScriptRegexEngine(),
   })

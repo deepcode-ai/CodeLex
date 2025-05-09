@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# @codelexjs/twoslash
+# @codelex/twoslash
 
-<Badges name="@codelexjs/twoslash" />
+<Badges name="@codelex/twoslash" />
 
 A Codelex transformer for [Twoslash](https://github.com/twoslashes/twoslash), provide inline type hover inside code blocks.
 
@@ -15,19 +15,19 @@ A Codelex transformer for [Twoslash](https://github.com/twoslashes/twoslash), pr
 ::: code-group
 
 ```sh [npm]
-npm install -D @codelexjs/twoslash
+npm install -D @codelex/twoslash
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/twoslash
+yarn add -D @codelex/twoslash
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/twoslash
+pnpm add -D @codelex/twoslash
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/twoslash
+bun add -D @codelex/twoslash
 ```
 
 :::
@@ -37,7 +37,7 @@ This package is **a transformer addon** to Codelex. This means that for every in
 ```ts twoslash
 import {
   transformerTwoslash,
-} from '@codelexjs/twoslash'
+} from '@codelex/twoslash'
 import {
   codeToHtml,
 } from 'codelex'
@@ -76,7 +76,7 @@ This renderer provides a more explicit class name is prefixed with `twoslash-` f
 In addition, it runs syntax highlighting on the hover information.
 
 ```ts twoslash
-import { rendererRich, transformerTwoslash } from '@codelexjs/twoslash'
+import { rendererRich, transformerTwoslash } from '@codelex/twoslash'
 
 transformerTwoslash({
   renderer: rendererRich() // <--
@@ -133,7 +133,7 @@ const c = 1
 This renderer aligns with the output of legacy [`codelex-twoslash`](https://github.com/deepcode-ai/twoslash).
 
 ```ts twoslash
-import { rendererClassic, transformerTwoslash } from '@codelexjs/twoslash'
+import { rendererClassic, transformerTwoslash } from '@codelex/twoslash'
 
 transformerTwoslash({
   renderer: rendererClassic() // <--
@@ -152,10 +152,10 @@ This renderer outputs Vue template syntax that using [Floating Vue](https://floa
 
 ### Explicit Trigger
 
-When integrating with `@codelexjs/markdown-it` or `rehype-codelex`, we may not want Twoslash to run on every code block. In this case, we can set `explicitTrigger` to `true` to only run on code blocks with `twoslash` presented in the codeframe.
+When integrating with `@codelex/markdown-it` or `rehype-codelex`, we may not want Twoslash to run on every code block. In this case, we can set `explicitTrigger` to `true` to only run on code blocks with `twoslash` presented in the codeframe.
 
 ```ts twoslash
-import { transformerTwoslash } from '@codelexjs/twoslash'
+import { transformerTwoslash } from '@codelex/twoslash'
 
 transformerTwoslash({
   explicitTrigger: true // <--
@@ -195,7 +195,7 @@ We make tiny wrappers around the building blocks and provide an easy-to-use API 
 
 ```js
 // FIXME: Replace with explicit versions in production
-import { createTransformerFactory, rendererRich } from 'https://esm.sh/@codelexjs/twoslash@latest/core'
+import { createTransformerFactory, rendererRich } from 'https://esm.sh/@codelex/twoslash@latest/core'
 import { codeToHtml } from 'https://esm.sh/codelex@latest'
 import { createTwoslashFromCDN } from 'https://esm.sh/twoslash-cdn@latest'
 import { createStorage } from 'https://esm.sh/unstorage@latest'

@@ -1,4 +1,4 @@
-import type { HighlighterCore, HighlighterCoreOptions } from '@codelexjs/types'
+import type { HighlighterCore, HighlighterCoreOptions } from '@codelex/types'
 
 import { codeToHast } from '../highlight/code-to-hast'
 import { codeToHtml } from '../highlight/code-to-html'

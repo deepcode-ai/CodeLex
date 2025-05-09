@@ -1,4 +1,4 @@
-import { createJavaScriptRawEngine } from '@codelexjs/engine-javascript'
+import { createJavaScriptRawEngine } from '@codelex/engine-javascript'
 import { createHighlighterCore } from 'codelex'
 import { expect, it } from 'vitest'
 // eslint-disable-next-line antfu/no-import-dist

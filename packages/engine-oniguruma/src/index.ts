@@ -1,4 +1,4 @@
-import type { LoadWasmOptions, RegexEngine } from '@codelexjs/types'
+import type { LoadWasmOptions, RegexEngine } from '@codelex/types'
 
 import { loadWasm, OnigScanner, OnigString } from './oniguruma'
 

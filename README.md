@@ -1,10 +1,10 @@
-<img src="https://raw.githubusercontent.com/codelexjs/codelex/main/docs/public/logo.svg" width="150" alt="Codelex Logo" />
+<img src="https://raw.githubusercontent.com/codeLex/codelex/main/docs/public/logo.svg" width="150" alt="Codelex Logo" />
 
 # Codelex 式
 
 [![NPM version](https://img.shields.io/npm/v/codelex?color=32A9C3&labelColor=1B3C4A&label=npm)](https://www.npmjs.com/package/codelex)
 [![NPM downloads](https://img.shields.io/npm/dm/codelex?color=32A9C3&labelColor=1B3C4A&label=downloads)](https://www.npmjs.com/package/codelex)
-[![Codecov](https://img.shields.io/codecov/c/github/codelexjs/codelex?token=1uJYfXgZG3&style=flat&labelColor=1B3C4A&color=32A9C3&precision=1)](https://app.codecov.io/gh/codelexjs/codelex/tree)
+[![Codecov](https://img.shields.io/codecov/c/github/codeLex/codelex?token=1uJYfXgZG3&style=flat&labelColor=1B3C4A&color=32A9C3&precision=1)](https://app.codecov.io/gh/codeLex/codelex/tree)
 
 A beautiful syntax highlighter based on TextMate grammar, accurate and powerful.
 

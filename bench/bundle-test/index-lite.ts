@@ -1,13 +1,13 @@
-import { codeToHtml, createCodelexInternal } from '@codelexjs/core'
-import { createJavaScriptRawEngine } from '@codelexjs/engine-javascript/raw'
+import { codeToHtml, createCodelexInternal } from '@codelex/core'
+import { createJavaScriptRawEngine } from '@codelex/engine-javascript/raw'
 
 const codelex = createCodelexInternal(
   {
     langs: [
-      import('@codelexjs/langs-precompiled/ts'),
+      import('@codelex/langs-precompiled/ts'),
     ],
     themes: [
-      import('@codelexjs/themes/vitesse-dark'),
+      import('@codelex/themes/vitesse-dark'),
     ],
     engine: createJavaScriptRawEngine(),
   },

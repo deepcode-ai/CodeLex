@@ -1,4 +1,4 @@
-import { createJavaScriptRegexEngine } from '@codelexjs/engine-javascript'
+import { createJavaScriptRegexEngine } from '@codelex/engine-javascript'
 import { codeToHtml } from 'codelex/bundle/full'
 import { describe, expect, it } from 'vitest'
 import { createCssVariablesTheme, createHighlighterCore } from '../src'
@@ -30,7 +30,7 @@ describe('css-variables', () => {
         }),
       ],
       langs: [
-        import('@codelexjs/langs/js'),
+        import('@codelex/langs/js'),
       ],
       engine: createJavaScriptRegexEngine(),
     })

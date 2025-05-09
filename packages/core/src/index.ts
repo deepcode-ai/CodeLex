@@ -21,4 +21,4 @@ export * from './utils'
 export { enableDeprecationWarnings, warnDeprecated } from './warn'
 
 // Types
-export * from '@codelexjs/types'
+export * from '@codelex/types'

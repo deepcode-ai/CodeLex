@@ -6,14 +6,14 @@ import type {
   LoadWasmOptions,
   WebAssemblyInstance,
   WebAssemblyInstantiator,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import type {
   IOnigCaptureIndex,
   IOnigMatch,
   OnigScanner as IOnigScanner,
   OnigString as IOnigString,
-} from '@codelexjs/vscode-textmate'
-import { CodelexError } from '@codelexjs/types'
+} from '@codelex/vscode-textmate'
+import { CodelexError } from '@codelex/types'
 import createOnigasm from './onig'
 
 export type Instantiator = (importObject: Record<string, Record<string, WebAssembly.ImportValue>>) => Promise<WebAssembly.Exports>

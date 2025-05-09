@@ -1,4 +1,4 @@
-import type { LanguageRegistration } from '@codelexjs/types'
+import type { LanguageRegistration } from '@codelex/types'
 import { traverseGrammarPatterns } from '../../../scripts/utils'
 import { defaultJavaScriptRegexConstructor } from '../../engine-javascript/src/engine-compile'
 

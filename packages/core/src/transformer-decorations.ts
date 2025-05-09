@@ -7,9 +7,9 @@ import type {
   CodelexTransformer,
   CodelexTransformerContextMeta,
   CodelexTransformerContextSource,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import type { Element, ElementContent } from 'hast'
-import { CodelexError } from '@codelexjs/types'
+import { CodelexError } from '@codelex/types'
 import { addClassToHast, createPositionConverter, splitTokens } from './utils'
 
 interface TransformerDecorationsInternalContext {

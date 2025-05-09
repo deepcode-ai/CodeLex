@@ -10,7 +10,7 @@ import type {
   ThemeInput,
   ThemeRegistrationAny,
   ThemeRegistrationResolved,
-} from '@codelexjs/types'
+} from '@codelex/types'
 
 import { CodelexError } from '../../../types/src/error'
 import { resolveLangs, resolveThemes } from '../textmate/getters-resolve'

@@ -1,5 +1,5 @@
 import { basename } from 'node:path'
-import { transformerTwoslash } from '@codelexjs/twoslash'
+import { transformerTwoslash } from '@codelex/twoslash'
 import { codeToHast, getSingletonHighlighter } from 'codelex'
 import { describe, expect, it } from 'vitest'
 import { rendererFloatingVue } from '../src'

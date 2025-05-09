@@ -1,7 +1,7 @@
 import type { TwoslashRenderer } from './types'
 
 /**
- * The default renderer aligning with the original `@codelexjs/twoslash` output.
+ * The default renderer aligning with the original `@codelex/twoslash` output.
  */
 export function rendererClassic(): TwoslashRenderer {
   return {

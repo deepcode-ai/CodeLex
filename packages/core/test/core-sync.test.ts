@@ -1,6 +1,6 @@
-import { createJavaScriptRegexEngine } from '@codelexjs/engine-javascript'
-import js from '@codelexjs/langs/javascript'
-import nord from '@codelexjs/themes/nord'
+import { createJavaScriptRegexEngine } from '@codelex/engine-javascript'
+import js from '@codelex/langs/javascript'
+import nord from '@codelex/themes/nord'
 import { describe, expect, it } from 'vitest'
 import { createHighlighterCoreSync } from '../src'
 
@@ -24,13 +24,13 @@ describe('should', () => {
       langs: [
         js,
         // Load the grammar upfront (await outside of the function)
-        await import('@codelexjs/langs/c').then(r => r.default),
+        await import('@codelex/langs/c').then(r => r.default),
       ],
       engine,
     })
 
-    codelex.loadLanguageSync(await import('@codelexjs/langs/python').then(m => m.default))
-    codelex.loadThemeSync(await import('@codelexjs/themes/vitesse-light').then(m => m.default))
+    codelex.loadLanguageSync(await import('@codelex/langs/python').then(m => m.default))
+    codelex.loadThemeSync(await import('@codelex/themes/vitesse-light').then(m => m.default))
 
     expect(codelex.getLoadedLanguages())
       .toMatchInlineSnapshot(`

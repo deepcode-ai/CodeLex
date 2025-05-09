@@ -1,4 +1,4 @@
-import type { ThemeRegistration } from '@codelexjs/types'
+import type { ThemeRegistration } from '@codelex/types'
 
 export interface CssVariablesThemeOptions {
   /**

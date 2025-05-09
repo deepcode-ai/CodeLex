@@ -13,8 +13,8 @@ export default defineBuildConfig({
   },
   externals: [
     'hast',
-    '@codelexjs/vitepress-twoslash',
-    '@codelexjs/vitepress-twoslash/style.css',
+    '@codelex/vitepress-twoslash',
+    '@codelex/vitepress-twoslash/style.css',
   ],
   hooks: {
     'rollup:done': async () => {
@@ -27,10 +27,10 @@ export default defineBuildConfig({
         '/* BUNDLED FROM floating-vue/dist/style.css */',
         floatingVue,
         '',
-        '/* BUNDLED FROM @codelexjs/twoslash/style-rich.css */',
+        '/* BUNDLED FROM @codelex/twoslash/style-rich.css */',
         twoslash,
         '',
-        '/* BUNDLED FROM @codelexjs/vitepress-twoslash/style-core.css */',
+        '/* BUNDLED FROM @codelex/vitepress-twoslash/style-core.css */',
         local,
       ].join('\n')
 

@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
-import type { BundledLanguageInfo, BundledThemeInfo } from '@codelexjs/types'
+import type { BundledLanguageInfo, BundledThemeInfo } from '@codelex/types'
 import { useLocalStorage } from '@vueuse/core'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { ref, shallowRef, watch } from 'vue'

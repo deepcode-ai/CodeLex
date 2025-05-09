@@ -3,10 +3,10 @@ import type {
   LanguageRegistration,
   ThemeRegistrationAny,
   ThemeRegistrationResolved,
-} from '@codelexjs/types'
-import type { IGrammarConfiguration, IRawTheme } from '@codelexjs/vscode-textmate'
+} from '@codelex/types'
+import type { IGrammarConfiguration, IRawTheme } from '@codelex/vscode-textmate'
 import type { Resolver } from './resolver'
-import { Registry as TextMateRegistry, Theme as TextMateTheme } from '@codelexjs/vscode-textmate'
+import { Registry as TextMateRegistry, Theme as TextMateTheme } from '@codelex/vscode-textmate'
 import { CodelexError } from '../../../types/src/error'
 import { normalizeTheme } from './normalize-theme'
 

@@ -1,4 +1,4 @@
-# @codelexjs/engine-oniguruma
+# @codelex/engine-oniguruma
 
 Engine for Codelex using Oniguruma RegExp engine in WebAssembly.
 

@@ -28,7 +28,7 @@ const code = await codeToHtml('foo\bar', {
 })
 ```
 
-We also provide some common transformers for you to use, see [`@codelexjs/transformers`](/packages/transformers) and [`@codelexjs/colorized-brackets`](/packages/colorized-brackets) for more details.
+We also provide some common transformers for you to use, see [`@codelex/transformers`](/packages/transformers) and [`@codelex/colorized-brackets`](/packages/colorized-brackets) for more details.
 
 ## Transformer Hooks
 

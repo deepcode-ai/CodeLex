@@ -1,4 +1,4 @@
-# @codelexjs/core
+# @codelex/core
 
 The core functionality of [Codelex](https://github.com/deepcode-ai/codelex), without any grammar of themes bundled.
 

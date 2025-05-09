@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { MatchAlgorithmOptions } from '../shared/notation-transformer'
 import { transformerNotationMap } from './notation-map'
 
@@ -30,6 +30,6 @@ export function transformerNotationErrorLevel(
       classActivePre,
       matchAlgorithm: options.matchAlgorithm,
     },
-    '@codelexjs/transformers:notation-error-level',
+    '@codelex/transformers:notation-error-level',
   )
 }

@@ -1,5 +1,5 @@
-import type { LanguageRegistration, RegexEngine } from '@codelexjs/types'
-import type { IOnigLib, RegistryOptions } from '@codelexjs/vscode-textmate'
+import type { LanguageRegistration, RegexEngine } from '@codelex/types'
+import type { IOnigLib, RegistryOptions } from '@codelex/vscode-textmate'
 
 export class Resolver implements RegistryOptions {
   private readonly _langs = new Map<string, LanguageRegistration>()

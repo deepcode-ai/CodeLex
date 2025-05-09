@@ -3,7 +3,7 @@ import type {
   CodelexInternal,
   ThemedToken,
   ThemedTokenWithVariants,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import { getLastGrammarStateFromMap, GrammarState, setLastGrammarStateToMap } from '../textmate/grammar-state'
 import { codeToTokensBase } from './code-to-tokens-base'
 

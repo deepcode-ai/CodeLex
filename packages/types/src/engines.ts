@@ -1,4 +1,4 @@
-import type { OnigScanner, OnigString } from '@codelexjs/vscode-textmate'
+import type { OnigScanner, OnigString } from '@codelex/vscode-textmate'
 import type { Awaitable } from './utils'
 
 export interface PatternScanner extends OnigScanner {}

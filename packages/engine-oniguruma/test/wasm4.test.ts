@@ -1,6 +1,6 @@
-import { createHighlighterCore } from '@codelexjs/core'
-import js from '@codelexjs/langs/js'
-import nord from '@codelexjs/themes/nord'
+import { createHighlighterCore } from '@codelex/core'
+import js from '@codelex/langs/js'
+import nord from '@codelex/themes/nord'
 import { expect, it } from 'vitest'
 
 // eslint-disable-next-line antfu/no-import-dist

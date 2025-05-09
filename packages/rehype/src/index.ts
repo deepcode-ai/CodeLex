@@ -1,6 +1,6 @@
 /// <reference types="mdast-util-to-hast" />
 
-import type { LanguageInput } from '@codelexjs/types'
+import type { LanguageInput } from '@codelex/types'
 import type { Root } from 'hast'
 import type { BuiltinLanguage, BuiltinTheme } from 'codelex'
 import type { Plugin } from 'unified'

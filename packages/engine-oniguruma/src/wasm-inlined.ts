@@ -1,4 +1,4 @@
-import type { WebAssemblyInstantiator } from '@codelexjs/types'
+import type { WebAssemblyInstantiator } from '@codelex/types'
 // @ts-expect-error this will be compiled to ArrayBuffer
 import binary from 'vscode-oniguruma/release/onig.wasm'
 

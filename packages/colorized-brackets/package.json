@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/colorized-brackets",
+  "name": "@codelex/colorized-brackets",
   "type": "module",
   "version": "3.4.0",
   "description": "VSCode-style colorized brackets transformer for Codelex",
@@ -14,7 +14,7 @@
   "bugs": "https://github.com/deepcode-ai/codelex/issues",
   "keywords": [
     "codelex",
-    "@codelexjs/colorized-brackets"
+    "@codelex/colorized-brackets"
   ],
   "sideEffects": false,
   "exports": {

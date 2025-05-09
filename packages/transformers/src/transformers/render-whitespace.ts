@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { Element } from 'hast'
 import { splitSpaces } from '../shared/utils'
 
@@ -39,7 +39,7 @@ export function transformerRenderWhitespace(
   const keys = Object.keys(classMap)
 
   return {
-    name: '@codelexjs/transformers:render-whitespace',
+    name: '@codelex/transformers:render-whitespace',
     // We use `root` hook here to ensure it runs after all other transformers
     root(root) {
       const pre = root.children[0] as Element

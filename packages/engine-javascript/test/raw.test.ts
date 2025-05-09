@@ -1,4 +1,4 @@
-import { createHighlighterCore } from '@codelexjs/core'
+import { createHighlighterCore } from '@codelex/core'
 import { expect, it } from 'vitest'
 import { createJavaScriptRawEngine } from '../src/engine-raw'
 
@@ -8,10 +8,10 @@ it.runIf(
 )('work with precompile grammar', async () => {
   const codelex = await createHighlighterCore({
     themes: [
-      import('@codelexjs/themes/vitesse-light'),
+      import('@codelex/themes/vitesse-light'),
     ],
     langs: [
-      import('@codelexjs/langs-precompiled/js'),
+      import('@codelex/langs-precompiled/js'),
     ],
     engine: createJavaScriptRawEngine(),
   })

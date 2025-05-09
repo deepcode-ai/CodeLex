@@ -5,10 +5,10 @@ import { codeToTokensBase, createCodelexInternal } from '../src'
 it('includeExplanation', async () => {
   using engine = await createCodelexInternal({
     themes: [
-      import('@codelexjs/themes/vitesse-dark'),
+      import('@codelex/themes/vitesse-dark'),
     ],
     langs: [
-      import('@codelexjs/langs/javascript'),
+      import('@codelex/langs/javascript'),
     ],
     engine: createJavaScriptRegexEngine(),
   })

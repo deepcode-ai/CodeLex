@@ -1,4 +1,4 @@
-import type { TransformerTwoslashOptions } from '@codelexjs/twoslash/core'
+import type { TransformerTwoslashOptions } from '@codelex/twoslash/core'
 import type { TwoslashReturn } from 'twoslash'
 import type { VueSpecificOptions } from 'twoslash-vue'
 import type { TwoslashFloatingVueRendererOptions } from './renderer-floating-vue'
@@ -19,8 +19,8 @@ export interface VitePressPluginTwoslashOptions extends TransformerTwoslashVueOp
    *
    * @example
    * ```ts
-   * import { transformerTwoslash } from '@codelexjs/vitepress-twoslash'
-   * import { createFileSystemTypesCache } from '@codelexjs/vitepress-twoslash/cache-fs'
+   * import { transformerTwoslash } from '@codelex/vitepress-twoslash'
+   * import { createFileSystemTypesCache } from '@codelex/vitepress-twoslash/cache-fs'
    *
    * transformerTwoslash({
    *   typesCache: createFileSystemTypesCache({

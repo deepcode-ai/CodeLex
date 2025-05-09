@@ -22,3 +22,6 @@ cache
 report-engine-js-compat.json
 scripts/compares
 tm-grammars-themes
+
+# Local Netlify folder
+.netlify

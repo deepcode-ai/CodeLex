@@ -7,14 +7,14 @@ import type {
   CodelexTransformerContextCommon,
   CodelexTransformerContextSource,
   ThemedToken,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import type {
   Element,
   Root,
   Text,
 } from 'hast'
 
-import { FontStyle } from '@codelexjs/vscode-textmate'
+import { FontStyle } from '@codelex/vscode-textmate'
 import { getLastGrammarStateFromMap, setLastGrammarStateToMap } from '../textmate/grammar-state'
 import { addClassToHast, getTokenStyleObject, stringifyTokenStyle } from '../utils'
 import { getTransformers } from './_get-transformers'

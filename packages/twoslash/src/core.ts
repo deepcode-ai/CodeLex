@@ -1,14 +1,14 @@
 /**
- * This file is the core of the @codelexjs/twoslash package,
+ * This file is the core of the @codelex/twoslash package,
  * Decoupled from twoslash's implementation and allowing to introduce custom implementation or cache system.
  */
-import type { CodelexTransformer, CodelexTransformerContextMeta } from '@codelexjs/types'
+import type { CodelexTransformer, CodelexTransformerContextMeta } from '@codelex/types'
 import type { Element, ElementContent, Text } from 'hast'
 import type { TwoslashExecuteOptions, TwoslashGenericFunction } from 'twoslash'
 
 import type { ModuleResolutionKind } from 'typescript'
 import type { TransformerTwoslashOptions, TwoslashRenderer, TwoslashCodelexFunction, TwoslashCodelexReturn } from './types'
-import { splitTokens } from '@codelexjs/core'
+import { splitTokens } from '@codelex/core'
 import { CodelexTwoslashError } from './error'
 import { parseIncludeMeta, TwoslashIncludesManager } from './includes'
 

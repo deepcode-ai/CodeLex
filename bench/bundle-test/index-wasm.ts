@@ -1,15 +1,15 @@
-import { codeToHtml, createCodelexInternal } from '@codelexjs/core'
-import { createOnigurumaEngine } from '@codelexjs/engine-oniguruma'
+import { codeToHtml, createCodelexInternal } from '@codelex/core'
+import { createOnigurumaEngine } from '@codelex/engine-oniguruma'
 
 const codelex = createCodelexInternal(
   {
     langs: [
-      import('@codelexjs/langs/ts'),
+      import('@codelex/langs/ts'),
     ],
     themes: [
-      import('@codelexjs/themes/vitesse-dark'),
+      import('@codelex/themes/vitesse-dark'),
     ],
-    engine: createOnigurumaEngine(import('@codelexjs/engine-oniguruma/wasm-inlined')),
+    engine: createOnigurumaEngine(import('@codelex/engine-oniguruma/wasm-inlined')),
   },
 )
 

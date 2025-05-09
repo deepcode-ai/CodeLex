@@ -12,26 +12,26 @@ VitePress provides [a few options for customizing Codelex](https://github.com/vu
 
 To enable [TypeScript Twoslash](/packages/twoslash) (type hover on code snippets) in VitePress, we provide a VitePress plugin for easy setup. Pre-styled, with [Floating Vue](https://floating-vue.starpad.dev/) to display the type information out side of the code container.
 
-<Badges name="@codelexjs/vitepress-twoslash" />
+<Badges name="@codelex/vitepress-twoslash" />
 
 ### Setup
 
 ::: code-group
 
 ```sh [npm]
-npm i -D @codelexjs/vitepress-twoslash
+npm i -D @codelex/vitepress-twoslash
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/vitepress-twoslash
+yarn add -D @codelex/vitepress-twoslash
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/vitepress-twoslash
+pnpm add -D @codelex/vitepress-twoslash
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/vitepress-twoslash
+bun add -D @codelex/vitepress-twoslash
 ```
 
 :::
@@ -39,7 +39,7 @@ bun add -D @codelexjs/vitepress-twoslash
 In your [`.vitepress/config.ts`](https://vitepress.dev/reference/site-config):
 
 ```ts [.vitepress/config.ts]
-import { transformerTwoslash } from '@codelexjs/vitepress-twoslash' // [!code hl]
+import { transformerTwoslash } from '@codelex/vitepress-twoslash' // [!code hl]
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -54,15 +54,15 @@ export default defineConfig({
 })
 ```
 
-And then in your [`.vitepress/theme/index.ts`](https://vitepress.dev/guide/custom-theme), install the Vue plugin and import the css with `@codelexjs/vitepress-twoslash/styles.css`.
+And then in your [`.vitepress/theme/index.ts`](https://vitepress.dev/guide/custom-theme), install the Vue plugin and import the css with `@codelex/vitepress-twoslash/styles.css`.
 
 ```ts twoslash [.vitepress/theme/index.ts]
 // @noErrors: true
 import type { EnhanceAppContext } from 'vitepress'
-import TwoslashFloatingVue from '@codelexjs/vitepress-twoslash/client' // [!code hl]
+import TwoslashFloatingVue from '@codelex/vitepress-twoslash/client' // [!code hl]
 import Theme from 'vitepress/theme'
 
-import '@codelexjs/vitepress-twoslash/style.css' // [!code hl]
+import '@codelex/vitepress-twoslash/style.css' // [!code hl]
 
 export default {
   extends: Theme,
@@ -74,15 +74,15 @@ export default {
 
 ::: details About style.css
 
-For easier setup, `@codelexjs/vitepress-twoslash/styles.css` bundles the styles from `floating-vue` and `@codelexjs/twoslash/style-rich.css` so you only need a single entry. If you are using a custom `floating-vue` style or want to have more control of the styles, you can expand them as:
+For easier setup, `@codelex/vitepress-twoslash/styles.css` bundles the styles from `floating-vue` and `@codelex/twoslash/style-rich.css` so you only need a single entry. If you are using a custom `floating-vue` style or want to have more control of the styles, you can expand them as:
 
 ```ts
-import '@codelexjs/vitepress-twoslash/style.css'
+import '@codelex/vitepress-twoslash/style.css'
 
 // Equivalent to:
-import '@codelexjs/twoslash/style-rich.css'
+import '@codelex/twoslash/style-rich.css'
 import 'floating-vue/dist/style.css'
-import '@codelexjs/vitepress-twoslash/style-core.css'
+import '@codelex/vitepress-twoslash/style-core.css'
 ```
 
 :::
@@ -142,8 +142,8 @@ To speed up the build process, you can enable the file system cache for the gene
 In your [`.vitepress/config.ts`](https://vitepress.dev/reference/site-config):
 
 ```ts [.vitepress/config.ts]
-import { transformerTwoslash } from '@codelexjs/vitepress-twoslash'
-import { createFileSystemTypesCache } from '@codelexjs/vitepress-twoslash/cache-fs' // [!code hl]
+import { transformerTwoslash } from '@codelex/vitepress-twoslash'
+import { createFileSystemTypesCache } from '@codelex/vitepress-twoslash/cache-fs' // [!code hl]
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({

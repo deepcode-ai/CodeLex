@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/monaco",
+  "name": "@codelex/monaco",
   "type": "module",
   "version": "3.4.0",
   "description": "Use Codelex for Monaco Editor",
@@ -35,9 +35,9 @@
     "play": "nr -C playground play"
   },
   "dependencies": {
-    "@codelexjs/core": "workspace:*",
-    "@codelexjs/types": "workspace:*",
-    "@codelexjs/vscode-textmate": "catalog:prod"
+    "@codelex/core": "workspace:*",
+    "@codelex/types": "workspace:*",
+    "@codelex/vscode-textmate": "catalog:prod"
   },
   "devDependencies": {
     "monaco-editor-core": "catalog:integrations"

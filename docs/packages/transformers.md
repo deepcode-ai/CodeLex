@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# @codelexjs/transformers
+# @codelex/transformers
 
-<Badges name="@codelexjs/transformers" />
+<Badges name="@codelex/transformers" />
 
 Common transformers for Codelex, inspired by [codelex-processor](https://github.com/innocenzi/codelex-processor).
 
@@ -13,19 +13,19 @@ Common transformers for Codelex, inspired by [codelex-processor](https://github.
 ::: code-group
 
 ```sh [npm]
-npm i -D @codelexjs/transformers
+npm i -D @codelex/transformers
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/transformers
+yarn add -D @codelex/transformers
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/transformers
+pnpm add -D @codelex/transformers
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/transformers
+bun add -D @codelex/transformers
 ```
 
 :::
@@ -37,7 +37,7 @@ bun add -D @codelexjs/transformers
 import {
   transformerNotationDiff,
   // ...
-} from '@codelexjs/transformers'
+} from '@codelex/transformers'
 import {
   codeToHtml,
 } from 'codelex'
@@ -428,7 +428,7 @@ Class names are generated based on the hash value of the style object with the p
 For example:
 
 ```ts
-import { transformerStyleToClass } from '@codelexjs/transformers'
+import { transformerStyleToClass } from '@codelex/transformers'
 import { codeToHtml } from 'codelex'
 
 const toClass = transformerStyleToClass({ // [!code highlight:3]

@@ -1,1 +1,1 @@
-export * from '@codelexjs/engine-oniguruma'
+export * from '@codelex/engine-oniguruma'

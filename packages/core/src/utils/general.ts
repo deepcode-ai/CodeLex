@@ -5,7 +5,7 @@ import type {
   SpecialLanguage,
   SpecialTheme,
   ThemeInput,
-} from '@codelexjs/types'
+} from '@codelex/types'
 
 export function toArray<T>(x: MaybeArray<T>): T[] {
   return Array.isArray(x) ? x : [x]

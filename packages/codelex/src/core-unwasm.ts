@@ -3,8 +3,8 @@
  * We add the wasm file as the dependency so users don't need to call `loadWasm` manually.
  */
 
-import { setDefaultWasmLoader } from '@codelexjs/engine-oniguruma'
+import { setDefaultWasmLoader } from '@codelex/engine-oniguruma'
 
 setDefaultWasmLoader(() => import('codelex/wasm'))
 
-export * from '@codelexjs/core'
+export * from '@codelex/core'

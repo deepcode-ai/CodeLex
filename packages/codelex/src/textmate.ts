@@ -1,1 +1,1 @@
-export * from '@codelexjs/vscode-textmate'
+export * from '@codelex/vscode-textmate'

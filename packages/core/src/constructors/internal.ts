@@ -1,4 +1,4 @@
-import type { HighlighterCoreOptions, CodelexInternal } from '@codelexjs/types'
+import type { HighlighterCoreOptions, CodelexInternal } from '@codelex/types'
 import { resolveLangs, resolveThemes } from '../textmate/getters-resolve'
 import { warnDeprecated } from '../warn'
 import { createCodelexInternalSync } from './internal-sync'

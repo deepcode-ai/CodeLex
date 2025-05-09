@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/engine-javascript",
+  "name": "@codelex/engine-javascript",
   "type": "module",
   "version": "3.4.0",
   "description": "Engine for Codelex using JavaScript's native RegExp",
@@ -33,8 +33,8 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/types": "workspace:*",
-    "@codelexjs/vscode-textmate": "catalog:prod",
+    "@codelex/types": "workspace:*",
+    "@codelex/vscode-textmate": "catalog:prod",
     "oniguruma-to-es": "catalog:prod"
   }
 }

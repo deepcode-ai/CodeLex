@@ -33,7 +33,7 @@ export function setupMarkdownWithCodeToHtml(
     const builtInTransformer: CodelexTransformer[] = []
 
     builtInTransformer.push({
-      name: '@codelexjs/markdown-it:block-class',
+      name: '@codelex/markdown-it:block-class',
       code(node) {
         node.properties.class = `language-${lang}`
       },

@@ -97,7 +97,7 @@ Pre-compiled languages are not yet supported, due to a [known issue](https://git
 Pre-compiled languages require support for RegExp UnicodeSets (the `v` flag), which requires ES2024 or Node.js 20+, and may not work in older environments. [Can I use](https://caniuse.com/mdn-javascript_builtins_regexp_unicodesets).
 :::
 
-You can install them with `@codelexjs/langs-precompiled`, and change your `@codelexjs/langs` imports to `@codelexjs/langs-precompiled`:
+You can install them with `@codelex/langs-precompiled`, and change your `@codelex/langs` imports to `@codelex/langs-precompiled`:
 
 ```ts
 import { createHighlighterCore } from 'codelex/core'
@@ -105,14 +105,14 @@ import { createJavaScriptRawEngine } from 'codelex/engine/javascript'
 
 const highlighter = await createHighlighterCore({
   langs: [
-    import('@codelexjs/langs/javascript'), // [!code --]
-    import('@codelexjs/langs/typescript'), // [!code --]
-    import('@codelexjs/langs-precompiled/javascript'), // [!code ++]
-    import('@codelexjs/langs-precompiled/typescript'), // [!code ++]
+    import('@codelex/langs/javascript'), // [!code --]
+    import('@codelex/langs/typescript'), // [!code --]
+    import('@codelex/langs-precompiled/javascript'), // [!code ++]
+    import('@codelex/langs-precompiled/typescript'), // [!code ++]
     // ...
   ],
   themes: [
-    import('@codelexjs/themes/nord'),
+    import('@codelex/themes/nord'),
   ],
   engine: createJavaScriptRegexEngine(), // [!code --]
   engine: createJavaScriptRawEngine(), // [!code ++]

@@ -54,13 +54,13 @@
     "test:cf": "wrangler dev test/cf.ts --port 60001"
   },
   "dependencies": {
-    "@codelexjs/core": "workspace:*",
-    "@codelexjs/engine-javascript": "workspace:*",
-    "@codelexjs/engine-oniguruma": "workspace:*",
-    "@codelexjs/langs": "workspace:*",
-    "@codelexjs/themes": "workspace:*",
-    "@codelexjs/types": "workspace:*",
-    "@codelexjs/vscode-textmate": "catalog:prod",
+    "@codelex/core": "workspace:*",
+    "@codelex/engine-javascript": "workspace:*",
+    "@codelex/engine-oniguruma": "workspace:*",
+    "@codelex/langs": "workspace:*",
+    "@codelex/themes": "workspace:*",
+    "@codelex/types": "workspace:*",
+    "@codelex/vscode-textmate": "catalog:prod",
     "@types/hast": "catalog:types"
   },
   "devDependencies": {

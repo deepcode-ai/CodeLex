@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# @codelexjs/colorized-brackets
+# @codelex/colorized-brackets
 
-<Badges name="@codelexjs/colorized-brackets" />
+<Badges name="@codelex/colorized-brackets" />
 
 VSCode-style colorized brackets transformer for Codelex.
 
@@ -13,19 +13,19 @@ VSCode-style colorized brackets transformer for Codelex.
 ::: code-group
 
 ```sh [npm]
-npm i -D @codelexjs/colorized-brackets
+npm i -D @codelex/colorized-brackets
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/colorized-brackets
+yarn add -D @codelex/colorized-brackets
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/colorized-brackets
+pnpm add -D @codelex/colorized-brackets
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/colorized-brackets
+bun add -D @codelex/colorized-brackets
 ```
 
 :::
@@ -35,7 +35,7 @@ bun add -D @codelexjs/colorized-brackets
 Add to your Codelex transformers:
 
 ```ts colorize-brackets
-import { transformerColorizedBrackets } from '@codelexjs/colorized-brackets'
+import { transformerColorizedBrackets } from '@codelex/colorized-brackets'
 import { codeToHtml } from 'codelex'
 
 const html = await codeToHtml('let values: number[] = [];', {

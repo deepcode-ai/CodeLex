@@ -1,4 +1,4 @@
-# @codelexjs/langs-precompiled
+# @codelex/langs-precompiled
 
 Precompiled languages for Codelex that can runs in pure JavaScript environment.
 

@@ -2,9 +2,9 @@ import type {
   ThemedToken,
   ThemeRegistrationResolved,
   TokenizeWithThemeOptions,
-} from '@codelexjs/types'
+} from '@codelex/types'
 
-import { FontStyle } from '@codelexjs/vscode-textmate'
+import { FontStyle } from '@codelex/vscode-textmate'
 import { createAnsiSequenceParser, createColorPalette, namedColors } from 'ansi-sequence-parser'
 
 import { applyColorReplacements, resolveColorReplacements, splitLines } from '../utils'

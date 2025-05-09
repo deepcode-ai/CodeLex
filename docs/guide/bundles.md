@@ -49,7 +49,7 @@ When importing `codelex`, all the themes and languages are bundled as async chun
 ```ts twoslash
 // @noErrors
 // directly import the theme and language modules, only the ones you imported will be bundled.
-import nord from '@codelexjs/themes/nord'
+import nord from '@codelex/themes/nord'
 
 // `codelex/core` entry does not include any themes or languages or the wasm binary.
 import { createHighlighterCore } from 'codelex/core'
@@ -60,12 +60,12 @@ const highlighter = await createHighlighterCore({
     // instead of strings, you need to pass the imported module
     nord,
     // or a dynamic import if you want to do chunk splitting
-    import('@codelexjs/themes/material-theme-ocean')
+    import('@codelex/themes/material-theme-ocean')
   ],
   langs: [
-    import('@codelexjs/langs/javascript'),
+    import('@codelex/langs/javascript'),
     // codelex will try to interop the module with the default export
-    () => import('@codelexjs/langs/css'),
+    () => import('@codelex/langs/css'),
     // or a getter that returns custom grammar
     async () => JSON.parse(await fs.readFile('my-grammar.json', 'utf-8'))
   ],
@@ -74,7 +74,7 @@ const highlighter = await createHighlighterCore({
 })
 
 // optionally, load themes and languages after creation
-await highlighter.loadTheme(import('@codelexjs/themes/vitesse-light'))
+await highlighter.loadTheme(import('@codelex/themes/vitesse-light'))
 
 const code = highlighter.codeToHtml('const a = 1', {
   lang: 'javascript',

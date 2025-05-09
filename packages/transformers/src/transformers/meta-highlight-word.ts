@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 
 export function parseMetaHighlightWords(meta: string): string[] {
   if (!meta)
@@ -32,7 +32,7 @@ export function transformerMetaWordHighlight(
   } = options
 
   return {
-    name: '@codelexjs/transformers:meta-word-highlight',
+    name: '@codelex/transformers:meta-word-highlight',
     preprocess(code, options) {
       if (!this.options.meta?.__raw)
         return

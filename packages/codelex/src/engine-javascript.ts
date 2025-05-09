@@ -1,1 +1,1 @@
-export * from '@codelexjs/engine-javascript'
+export * from '@codelex/engine-javascript'

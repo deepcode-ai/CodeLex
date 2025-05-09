@@ -9,7 +9,7 @@ it('getSingletonHighlighterCore', async () => {
   const codelex1 = await getSingletonHighlighterCore({
     themes: [nord],
     langs: [js as any],
-    engine: createOnigurumaEngine(import('@codelexjs/engine-oniguruma/wasm-inlined')),
+    engine: createOnigurumaEngine(import('@codelex/engine-oniguruma/wasm-inlined')),
   })
 
   expect(codelex1.codeToHtml('console.log("Hi")', { lang: 'javascript', theme: 'nord' }))

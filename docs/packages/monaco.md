@@ -1,6 +1,6 @@
-# @codelexjs/monaco
+# @codelex/monaco
 
-<Badges name="@codelexjs/monaco" />
+<Badges name="@codelex/monaco" />
 
 Use Codelex to highlight [Monaco Editor](https://microsoft.github.io/monaco-editor/).
 
@@ -13,25 +13,25 @@ Heavily inspired by [`monaco-editor-textmate`](https://github.com/zikaari/monaco
 ::: code-group
 
 ```sh [npm]
-npm i -D @codelexjs/monaco
+npm i -D @codelex/monaco
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/monaco
+yarn add -D @codelex/monaco
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/monaco
+pnpm add -D @codelex/monaco
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/monaco
+bun add -D @codelex/monaco
 ```
 
 :::
 
 ```ts
-import { codelexToMonaco } from '@codelexjs/monaco'
+import { codelexToMonaco } from '@codelex/monaco'
 import * as monaco from 'monaco-editor-core'
 import { createHighlighter } from 'codelex'
 

@@ -12,7 +12,7 @@ To make deep migration easier, we provide a compatibility build that shimmed the
 
 ## Installations
 
-<Badges name="@codelexjs/compat" />
+<Badges name="@codelex/compat" />
 
 Set the alias to `codelex` in your `package.json`:
 
@@ -22,7 +22,7 @@ Set the alias to `codelex` in your `package.json`:
 {
   "dependencies": {
     "codelex": "0.14.3", // [!code --]
-    "codelex": "npm:@codelexjs/compat@1.0" // [!code ++]
+    "codelex": "npm:@codelex/compat@1.0" // [!code ++]
   }
 }
 ```

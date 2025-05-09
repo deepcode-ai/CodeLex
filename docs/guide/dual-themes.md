@@ -20,7 +20,7 @@ const code = await codeToHtml('console.log("hello")', {
 })
 ```
 
-The following HTML will be generated ([demo preview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/codelexjs/codelex/main/packages/codelex/test/out/dual-themes.html)):
+The following HTML will be generated ([demo preview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/codeLex/codelex/main/packages/codelex/test/out/dual-themes.html)):
 
 ```html
 <pre
@@ -119,7 +119,7 @@ After that, you need to apply theme's css variables on element with `codelex` cl
 }
 ```
 
-[Demo preview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/codelexjs/codelex/main/packages/codelex/test/out/multiple-themes.html)
+[Demo preview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/codeLex/codelex/main/packages/codelex/test/out/multiple-themes.html)
 
 ### Without Default Color
 

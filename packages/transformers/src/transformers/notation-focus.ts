@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { MatchAlgorithmOptions } from '../shared/notation-transformer'
 import { transformerNotationMap } from './notation-map'
 
@@ -32,6 +32,6 @@ export function transformerNotationFocus(
       classActivePre,
       matchAlgorithm: options.matchAlgorithm,
     },
-    '@codelexjs/transformers:notation-focus',
+    '@codelex/transformers:notation-focus',
   )
 }

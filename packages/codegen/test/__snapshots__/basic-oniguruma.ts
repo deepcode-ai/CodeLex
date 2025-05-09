@@ -1,30 +1,30 @@
-/* Generate by @codelexjs/codegen */
+/* Generate by @codelex/codegen */
 import type {
   DynamicImportLanguageRegistration,
   DynamicImportThemeRegistration,
   HighlighterGeneric,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import {
   createSingletonShorthands,
   createdBundledHighlighter,
-} from '@codelexjs/core'
-import { createOnigurumaEngine } from '@codelexjs/engine-oniguruma'
+} from '@codelex/core'
+import { createOnigurumaEngine } from '@codelex/engine-oniguruma'
 
 type BundledLanguage = 'javascript' | 'js' | 'typescript' | 'ts' | 'tsx'
 type BundledTheme = 'nord' | 'vitesse-dark'
 type Highlighter = HighlighterGeneric<BundledLanguage, BundledTheme>
 
 const bundledLanguages = {
-  javascript: () => import('@codelexjs/langs/javascript'),
-  js: () => import('@codelexjs/langs/javascript'),
-  typescript: () => import('@codelexjs/langs/typescript'),
-  ts: () => import('@codelexjs/langs/typescript'),
-  tsx: () => import('@codelexjs/langs/tsx'),
+  javascript: () => import('@codelex/langs/javascript'),
+  js: () => import('@codelex/langs/javascript'),
+  typescript: () => import('@codelex/langs/typescript'),
+  ts: () => import('@codelex/langs/typescript'),
+  tsx: () => import('@codelex/langs/tsx'),
 } as Record<BundledLanguage, DynamicImportLanguageRegistration>
 
 const bundledThemes = {
-  nord: () => import('@codelexjs/themes/nord'),
-  'vitesse-dark': () => import('@codelexjs/themes/vitesse-dark'),
+  nord: () => import('@codelex/themes/nord'),
+  'vitesse-dark': () => import('@codelex/themes/vitesse-dark'),
 } as Record<BundledTheme, DynamicImportThemeRegistration>
 
 const createHighlighter = /* @__PURE__ */ createdBundledHighlighter<

@@ -1,8 +1,8 @@
 import type {
   PatternScanner,
   RegexEngineString,
-} from '@codelexjs/types'
-import type { IOnigMatch } from '@codelexjs/vscode-textmate'
+} from '@codelex/types'
+import type { IOnigMatch } from '@codelex/vscode-textmate'
 
 const MAX = 4294967295
 

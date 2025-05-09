@@ -23,14 +23,14 @@ import { createdBundledHighlighter, createSingletonShorthands } from 'codelex/co
 import { createJavaScriptRegexEngine } from 'codelex/engine/javascript'
 
 const BundledLanguage = {
-  typescript: () => import('@codelexjs/langs/typescript'),
-  javascript: () => import('@codelexjs/langs/javascript'),
-  vue: () => import('@codelexjs/langs/vue'),
+  typescript: () => import('@codelex/langs/typescript'),
+  javascript: () => import('@codelex/langs/javascript'),
+  vue: () => import('@codelex/langs/vue'),
 }
 
 const BundledTheme = {
-  'light-plus': () => import('@codelexjs/themes/light-plus'),
-  'dark-plus': () => import('@codelexjs/themes/dark-plus'),
+  'light-plus': () => import('@codelex/themes/light-plus'),
+  'dark-plus': () => import('@codelex/themes/dark-plus'),
 }
 
 // This creates your custom 'createHighlighter' function with fine-grained bundles

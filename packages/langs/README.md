@@ -1,4 +1,4 @@
-# @codelexjs/langs
+# @codelex/langs
 
 TextMate grammars for Codelex.
 

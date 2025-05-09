@@ -1,8 +1,8 @@
-import type { GrammarState as GrammarStateInterface, GrammarStateMapKey } from '@codelexjs/types'
-import type { StateStack, StateStackImpl } from '@codelexjs/vscode-textmate'
+import type { GrammarState as GrammarStateInterface, GrammarStateMapKey } from '@codelex/types'
+import type { StateStack, StateStackImpl } from '@codelex/vscode-textmate'
 
-import { CodelexError } from '@codelexjs/types'
-import { INITIAL } from '@codelexjs/vscode-textmate'
+import { CodelexError } from '@codelex/types'
+import { INITIAL } from '@codelex/vscode-textmate'
 import { toArray } from '../utils'
 
 const _grammarStateMap = new WeakMap<GrammarStateMapKey, GrammarStateInterface>()

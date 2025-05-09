@@ -25,10 +25,10 @@ graph TD
   transformers
 ```
 
-- `core` contains the core logic of Codelex, without any languages/themes prebundled. Published as `@codelexjs/core`.
+- `core` contains the core logic of Codelex, without any languages/themes prebundled. Published as `@codelex/core`.
 - `codelex` is the main package that bundles languages/themes from [`tm-grammars`](https://github.com/deepcode-ai/textmate-grammars-themes) and [`tm-themes`](https://github.com/deepcode-ai/textmate-grammars-themes) for easier usage. Published as `codelex`.
-- `compat` contains the compatibility layer for Codelex v0.x. Published as `@codelexjs/compat`.
-- `transformers` contains common transformers for Codelex. Published as `@codelexjs/transformer`.
+- `compat` contains the compatibility layer for Codelex v0.x. Published as `@codelex/compat`.
+- `transformers` contains common transformers for Codelex. Published as `@codelex/transformer`.
 - The rest of the packages are high-level integrations on top of `codelex`.
 
 ### Testing

@@ -1,5 +1,5 @@
 import { basename } from 'node:path'
-import { rendererRich, transformerTwoslash } from '@codelexjs/twoslash'
+import { rendererRich, transformerTwoslash } from '@codelex/twoslash'
 import { codeToHast, hastToHtml } from 'codelex'
 import { describe, expect, it } from 'vitest'
 

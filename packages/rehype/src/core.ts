@@ -1,7 +1,7 @@
 import type {
   CodeToHastOptions,
   HighlighterGeneric,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import type { Root } from 'hast'
 import type { Transformer } from 'unified'
 import type { RehypeCodelexHandler } from './handlers'

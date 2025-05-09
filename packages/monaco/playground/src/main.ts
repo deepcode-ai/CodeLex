@@ -1,4 +1,4 @@
-import { codelexToMonaco } from '@codelexjs/monaco'
+import { codelexToMonaco } from '@codelex/monaco'
 import * as monaco from 'monaco-editor-core'
 import { createHighlighter } from 'codelex'
 

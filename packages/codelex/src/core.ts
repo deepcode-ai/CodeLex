@@ -1,1 +1,1 @@
-export * from '@codelexjs/core'
+export * from '@codelex/core'

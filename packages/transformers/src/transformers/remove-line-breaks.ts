@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 
 /**
  * Remove line breaks between lines.
@@ -6,7 +6,7 @@ import type { CodelexTransformer } from '@codelexjs/types'
  */
 export function transformerRemoveLineBreak(): CodelexTransformer {
   return {
-    name: '@codelexjs/transformers:remove-line-break',
+    name: '@codelex/transformers:remove-line-break',
     code(code) {
       code.children = code.children.filter(line => !(line.type === 'text' && line.value === '\n'))
     },

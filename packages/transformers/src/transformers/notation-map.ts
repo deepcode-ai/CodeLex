@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { MatchAlgorithmOptions } from '../shared/notation-transformer'
 import { createCommentNotationTransformer } from '../shared/notation-transformer'
 
@@ -16,7 +16,7 @@ function escapeRegExp(str: string): string {
 
 export function transformerNotationMap(
   options: TransformerNotationMapOptions = {},
-  name = '@codelexjs/transformers:notation-map',
+  name = '@codelex/transformers:notation-map',
 ): CodelexTransformer {
   const {
     classMap = {},

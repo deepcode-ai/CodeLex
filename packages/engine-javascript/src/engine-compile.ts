@@ -1,4 +1,4 @@
-import type { RegexEngine } from '@codelexjs/types'
+import type { RegexEngine } from '@codelex/types'
 import type { ToRegExpOptions } from 'oniguruma-to-es'
 import type { JavaScriptRegexScannerOptions } from './scanner'
 import { toRegExp } from 'oniguruma-to-es'

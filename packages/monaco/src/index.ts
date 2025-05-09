@@ -1,7 +1,7 @@
-import type { CodelexInternal, ThemeRegistrationResolved } from '@codelexjs/types'
+import type { CodelexInternal, ThemeRegistrationResolved } from '@codelex/types'
 import type monacoNs from 'monaco-editor-core'
 import type { MonacoLineToken } from './types'
-import { EncodedTokenMetadata, INITIAL } from '@codelexjs/vscode-textmate'
+import { EncodedTokenMetadata, INITIAL } from '@codelex/vscode-textmate'
 import { TokenizerState } from './tokenizer'
 import { normalizeColor } from './utils'
 

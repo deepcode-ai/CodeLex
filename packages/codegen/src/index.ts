@@ -6,7 +6,7 @@ export interface CodelexCodegenOptions {
   /**
    * The header to add to the generated code.
    *
-   * @default '/* Generate by @codelexjs/codegen *\/'
+   * @default '/* Generate by @codelex/codegen *\/'
    */
   header?: string
 
@@ -57,7 +57,7 @@ export interface CodelexCodegenResult {
 
 export async function codegen(options: CodelexCodegenOptions): Promise<CodelexCodegenResult> {
   const {
-    header = '/* Generate by @codelexjs/codegen */',
+    header = '/* Generate by @codelex/codegen */',
     typescript = true,
     precompiled = false,
     format: _format = true,
@@ -86,19 +86,19 @@ export async function codegen(options: CodelexCodegenOptions): Promise<CodelexCo
   const langsCode = `{\n${langs.flatMap((lang) => {
     const ids = [lang.id, ...(lang.aliases || [])]
     return ids.map((id) => {
-      return `${JSON.stringify(id)}: () => import('@codelexjs/${precompiled ? 'langs-precompiled' : 'langs'}/${lang.id}'),\n`
+      return `${JSON.stringify(id)}: () => import('@codelex/${precompiled ? 'langs-precompiled' : 'langs'}/${lang.id}'),\n`
     })
   }).join('')}}`
 
   const themesCode = `{\n${themes.map((theme) => {
-    return `${JSON.stringify(theme.id)}: () => import('@codelexjs/themes/${theme.id}'),\n`
+    return `${JSON.stringify(theme.id)}: () => import('@codelex/themes/${theme.id}'),\n`
   }).join('')}}`
 
   const typeImports: Record<string, string[]> = {
-    '@codelexjs/types': ['HighlighterGeneric', 'DynamicImportThemeRegistration', 'DynamicImportLanguageRegistration'],
+    '@codelex/types': ['HighlighterGeneric', 'DynamicImportThemeRegistration', 'DynamicImportLanguageRegistration'],
   }
   const imports: Record<string, string[]> = {
-    '@codelexjs/core': ['createdBundledHighlighter'],
+    '@codelex/core': ['createdBundledHighlighter'],
   }
   const lines: string[] = [
     '',
@@ -129,15 +129,15 @@ export async function codegen(options: CodelexCodegenOptions): Promise<CodelexCo
   let engine: string
 
   if (options.engine === 'javascript') {
-    imports['@codelexjs/engine-javascript'] = ['createJavaScriptRegexEngine']
+    imports['@codelex/engine-javascript'] = ['createJavaScriptRegexEngine']
     engine = 'createJavaScriptRegexEngine()'
   }
   else if (options.engine === 'javascript-raw') {
-    imports['@codelexjs/engine-javascript/raw'] = ['createJavaScriptRawEngine']
+    imports['@codelex/engine-javascript/raw'] = ['createJavaScriptRawEngine']
     engine = 'createJavaScriptRawEngine()'
   }
   else {
-    imports['@codelexjs/engine-oniguruma'] = ['createOnigurumaEngine']
+    imports['@codelex/engine-oniguruma'] = ['createOnigurumaEngine']
     engine = 'createOnigurumaEngine(import(\'codelex/wasm\'))'
   }
 
@@ -152,7 +152,7 @@ export async function codegen(options: CodelexCodegenOptions): Promise<CodelexCo
   exports.push('createHighlighter')
 
   if (shorthands) {
-    imports['@codelexjs/core'].push('createSingletonShorthands')
+    imports['@codelex/core'].push('createSingletonShorthands')
     const shorthandFunctions = [
       'codeToHtml',
       'codeToHast',

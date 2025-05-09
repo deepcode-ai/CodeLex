@@ -2,7 +2,7 @@
 import type { BundledLanguage } from 'codelex'
 import type { ReportItem } from '../../scripts/report-engine-js-compat'
 import fs from 'node:fs/promises'
-import { createJavaScriptRawEngine, createJavaScriptRegexEngine } from '@codelexjs/engine-javascript'
+import { createJavaScriptRawEngine, createJavaScriptRegexEngine } from '@codelex/engine-javascript'
 import { createHighlighter, createOnigurumaEngine } from 'codelex'
 import { bench, describe } from 'vitest'
 
@@ -33,7 +33,7 @@ const codelexWasm = await createHighlighter({
 })
 
 const codelexJsPrecompiled = await createHighlighter({
-  langs: await Promise.all(langs.map(lang => import(`@codelexjs/langs-precompiled/${lang}`))),
+  langs: await Promise.all(langs.map(lang => import(`@codelex/langs-precompiled/${lang}`))),
   themes: ['vitesse-dark'],
   engine: jsRaw,
 })

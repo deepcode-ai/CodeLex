@@ -3,7 +3,7 @@ import type {
   IRawGrammar as RawGrammar,
   IRawTheme as RawTheme,
   IRawThemeSetting as RawThemeSetting,
-} from '@codelexjs/vscode-textmate'
+} from '@codelex/vscode-textmate'
 
 export type {
   RawGrammar,

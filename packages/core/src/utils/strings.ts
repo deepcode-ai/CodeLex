@@ -1,4 +1,4 @@
-import type { HighlighterGeneric, Position } from '@codelexjs/types'
+import type { HighlighterGeneric, Position } from '@codelex/types'
 
 /**
  * Split a string into lines, each line preserves the line ending.

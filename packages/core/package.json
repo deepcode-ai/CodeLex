@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/core",
+  "name": "@codelex/core",
   "type": "module",
   "version": "3.4.0",
   "description": "Core of Codelex",
@@ -42,8 +42,8 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@codelexjs/types": "workspace:*",
-    "@codelexjs/vscode-textmate": "catalog:prod",
+    "@codelex/types": "workspace:*",
+    "@codelex/vscode-textmate": "catalog:prod",
     "@types/hast": "catalog:types",
     "hast-util-to-html": "catalog:inlined"
   }

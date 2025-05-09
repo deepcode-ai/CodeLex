@@ -1,6 +1,6 @@
-# @codelexjs/markdown-it
+# @codelex/markdown-it
 
-<Badges name="@codelexjs/markdown-it" />
+<Badges name="@codelex/markdown-it" />
 
 [markdown-it](https://markdown-it.github.io/) plugin for Codelex.
 
@@ -9,19 +9,19 @@
 ::: code-group
 
 ```sh [npm]
-npm i -D @codelexjs/markdown-it
+npm i -D @codelex/markdown-it
 ```
 
 ```sh [yarn]
-yarn add -D @codelexjs/markdown-it
+yarn add -D @codelex/markdown-it
 ```
 
 ```sh [pnpm]
-pnpm add -D @codelexjs/markdown-it
+pnpm add -D @codelex/markdown-it
 ```
 
 ```sh [bun]
-bun add -D @codelexjs/markdown-it
+bun add -D @codelex/markdown-it
 ```
 
 :::
@@ -29,7 +29,7 @@ bun add -D @codelexjs/markdown-it
 ## Usage
 
 ```ts twoslash
-import Codelex from '@codelexjs/markdown-it'
+import Codelex from '@codelex/markdown-it'
 import MarkdownIt from 'markdown-it'
 
 const md = MarkdownIt()
@@ -44,21 +44,21 @@ md.use(await Codelex({
 
 ## Fine-grained Bundle
 
-By default, the full bundle of `codelex` will be imported. If you are using a [fine-grained bundle](/guide/bundles#fine-grained-bundle), you can import from `@codelexjs/markdown-it/core` and pass your own highlighter:
+By default, the full bundle of `codelex` will be imported. If you are using a [fine-grained bundle](/guide/bundles#fine-grained-bundle), you can import from `@codelex/markdown-it/core` and pass your own highlighter:
 
 ```ts twoslash
 // @noErrors: true
-import { fromHighlighter } from '@codelexjs/markdown-it/core'
+import { fromHighlighter } from '@codelex/markdown-it/core'
 import MarkdownIt from 'markdown-it'
 import { createHighlighterCore } from 'codelex/core'
 import { createOnigurumaEngine } from 'codelex/engine/oniguruma'
 
 const highlighter = await createHighlighterCore({
   themes: [
-    import('@codelexjs/themes/vitesse-light')
+    import('@codelex/themes/vitesse-light')
   ],
   langs: [
-    import('@codelexjs/langs/javascript'),
+    import('@codelex/langs/javascript'),
   ],
   engine: createOnigurumaEngine(() => import('codelex/wasm'))
 })
@@ -72,10 +72,10 @@ md.use(fromHighlighter(highlighter, { /* options */ }))
 
 Codelex's [shorthands](/guide/shorthands) provides on-demand loading of themes and languages, but also makes the highlighting process asynchronous. Unfortunately, `markdown-it` itself [does NOT support async highlighting](https://github.com/markdown-it/markdown-it/blob/master/docs/development.md#i-need-async-rule-how-to-do-it) out of the box.
 
-To workaround this, you can use [`markdown-it-async`](https://github.com/antfu/markdown-it-async) by [Anthony Fu](https://github.com/antfu). Where Codelex also provides an integration with it, you can import `fromAsyncCodeToHtml` from `@codelexjs/markdown-it/async`.
+To workaround this, you can use [`markdown-it-async`](https://github.com/antfu/markdown-it-async) by [Anthony Fu](https://github.com/antfu). Where Codelex also provides an integration with it, you can import `fromAsyncCodeToHtml` from `@codelex/markdown-it/async`.
 
 ````ts twoslash
-import { fromAsyncCodeToHtml } from '@codelexjs/markdown-it/async'
+import { fromAsyncCodeToHtml } from '@codelex/markdown-it/async'
 import MarkdownItAsync from 'markdown-it-async'
 import { codeToHtml } from 'codelex' // Or your custom shorthand bundle
 

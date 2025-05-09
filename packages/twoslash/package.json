@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/twoslash",
+  "name": "@codelex/twoslash",
   "type": "module",
   "version": "3.4.0",
   "description": "Codelex transformer for twoslash",
@@ -41,14 +41,14 @@
     "typescript": ">=5.5.0"
   },
   "dependencies": {
-    "@codelexjs/core": "workspace:*",
-    "@codelexjs/types": "workspace:*",
+    "@codelex/core": "workspace:*",
+    "@codelex/types": "workspace:*",
     "twoslash": "catalog:integrations"
   },
   "devDependencies": {
     "@iconify-json/carbon": "catalog:icons",
     "@iconify-json/codicon": "catalog:icons",
-    "@codelexjs/twoslash": "workspace:*",
+    "@codelex/twoslash": "workspace:*",
     "hast-util-from-html": "catalog:inlined",
     "typescript": "catalog:cli"
   }

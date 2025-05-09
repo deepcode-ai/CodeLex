@@ -59,7 +59,7 @@ export { default } from './${json.name}.mjs'
       exportedFileNames.push(name)
       await fs.writeFile(
         `./dist/${name}.d.mts`,
-        `import type { LanguageRegistration } from '@codelexjs/types'
+        `import type { LanguageRegistration } from '@codelex/types'
 const langs: LanguageRegistration []
 export default langs
 `,

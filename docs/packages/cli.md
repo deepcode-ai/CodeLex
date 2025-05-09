@@ -1,6 +1,6 @@
-# @codelexjs/cli
+# @codelex/cli
 
-<Badges name="@codelexjs/cli" />
+<Badges name="@codelex/cli" />
 
 Codelex in the command line.
 
@@ -9,29 +9,29 @@ Codelex in the command line.
 The Codelex CLI works like `cat` command, but with syntax highlighting.
 
 ```bash
-npx @codelexjs/cli README.md
+npx @codelex/cli README.md
 ```
 
 ## Install
 
-You can also install it globally. Command aliases `@codelexjs/cli`, `codelex`, `skat` are registered.
+You can also install it globally. Command aliases `@codelex/cli`, `codelex`, `skat` are registered.
 
 ::: code-group
 
 ```sh [npm]
-npm i -g @codelexjs/cli
+npm i -g @codelex/cli
 ```
 
 ```sh [yarn]
-yarn global add @codelexjs/cli
+yarn global add @codelex/cli
 ```
 
 ```sh [pnpm]
-pnpm add -g @codelexjs/cli
+pnpm add -g @codelex/cli
 ```
 
 ```sh [bun]
-bun add -g @codelexjs/cli
+bun add -g @codelex/cli
 ```
 
 :::
@@ -47,7 +47,7 @@ skat src/index.ts
 Specify the theme to use. Defaults to `vitesse-dark`.
 
 ```bash
-npx @codelexjs/cli README.md --theme=nord
+npx @codelex/cli README.md --theme=nord
 ```
 
 ### `--lang`
@@ -55,5 +55,5 @@ npx @codelexjs/cli README.md --theme=nord
 Language is auto-inferred from the file extension. You can override it with `--lang`.
 
 ```bash
-npx @codelexjs/cli src/index.js --lang=ts
+npx @codelex/cli src/index.js --lang=ts
 ```

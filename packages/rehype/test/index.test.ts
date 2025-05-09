@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises'
-import { transformerMetaHighlight, transformerMetaWordHighlight } from '@codelexjs/transformers'
+import { transformerMetaHighlight, transformerMetaWordHighlight } from '@codelex/transformers'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'

@@ -1,4 +1,4 @@
-# @codelexjs/twoslash
+# @codelex/twoslash
 
 A [codelex](https://github.com/deepcode-ai/codelex) transformer for [TypeScript Twoslash](https://www.typescriptlang.org/dev/twoslash/).
 

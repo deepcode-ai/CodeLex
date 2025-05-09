@@ -1,4 +1,4 @@
-# @codelexjs/codegen
+# @codelex/codegen
 
 Codegen for fine-grained Codelex bundles.
 

@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/vitepress-twoslash",
+  "name": "@codelex/vitepress-twoslash",
   "type": "module",
   "version": "3.4.0",
   "description": "Enable Twoslash support in VitePress",
@@ -38,7 +38,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/twoslash": "workspace:",
+    "@codelex/twoslash": "workspace:",
     "floating-vue": "catalog:docs",
     "mdast-util-from-markdown": "catalog:integrations",
     "mdast-util-gfm": "catalog:integrations",

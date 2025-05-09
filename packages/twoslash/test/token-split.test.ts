@@ -1,5 +1,5 @@
 import type { Node } from 'hast'
-import { transformerTwoslash } from '@codelexjs/twoslash'
+import { transformerTwoslash } from '@codelex/twoslash'
 import { codeToHast, codeToTokensBase } from 'codelex'
 import { visit } from 'unist-util-visit'
 import { expect, it } from 'vitest'

@@ -1,4 +1,4 @@
-# @codelexjs/monaco
+# @codelex/monaco
 
 Use [codelex](https://github.com/deepcode-ai/codelex) to highlight [Monaco Editor](https://microsoft.github.io/monaco-editor/).
 

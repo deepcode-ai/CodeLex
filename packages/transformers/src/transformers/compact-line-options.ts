@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 
 export interface TransformerCompactLineOption {
   /**
@@ -15,7 +15,7 @@ export function transformerCompactLineOptions(
   lineOptions: TransformerCompactLineOption[] = [],
 ): CodelexTransformer {
   return {
-    name: '@codelexjs/transformers:compact-line-options',
+    name: '@codelex/transformers:compact-line-options',
     line(node, line) {
       const lineOption = lineOptions.find(o => o.line === line)
       if (lineOption?.classes)

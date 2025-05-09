@@ -5,8 +5,8 @@ The `await createHighlighter()` and `highlighter.codeToHtml()` are already the e
 In some extreme cases that you need to run Codelex completely synchronously, since v1.16, we provide a synchronous version of the core API. You can use `createHighlighterCoreSync` to create a highlighter instance synchronously.
 
 ```ts
-import js from '@codelexjs/langs/javascript'
-import nord from '@codelexjs/themes/nord'
+import js from '@codelex/langs/javascript'
+import nord from '@codelex/themes/nord'
 import { createHighlighterCoreSync } from 'codelex/core'
 import { createJavaScriptRegexEngine } from 'codelex/engine/javascript'
 
@@ -24,8 +24,8 @@ When doing so, it requires all `themes` and `langs` to be provide as plain objec
 The [Oniguruma Engine](/guide/regex-engines#oniguruma-engine) can only be created asynchronously, so you need to resolve the engine promise before creating the sync highlighter.
 
 ```ts
-import js from '@codelexjs/langs/javascript'
-import nord from '@codelexjs/themes/nord'
+import js from '@codelex/langs/javascript'
+import nord from '@codelex/themes/nord'
 import { createHighlighterCoreSync } from 'codelex/core'
 import { createOnigurumaEngine } from 'codelex/engine/oniguruma'
 

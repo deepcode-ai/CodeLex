@@ -4,7 +4,7 @@ import type { BundledTheme } from './themes'
 export type { BundledLanguage } from './langs'
 export type { BundledTheme } from './themes'
 
-export type * from '@codelexjs/core/types'
+export type * from '@codelex/core/types'
 
 export type BuiltinLanguage = BundledLanguage
 export type BuiltinTheme = BundledTheme

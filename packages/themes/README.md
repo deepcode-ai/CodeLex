@@ -1,4 +1,4 @@
-# @codelexjs/themes
+# @codelex/themes
 
 TextMate themes for Codelex.
 

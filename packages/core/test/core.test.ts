@@ -1,11 +1,11 @@
-import { createJavaScriptRegexEngine } from '@codelexjs/engine-javascript'
-import { createOnigurumaEngine } from '@codelexjs/engine-oniguruma'
+import { createJavaScriptRegexEngine } from '@codelex/engine-javascript'
+import { createOnigurumaEngine } from '@codelex/engine-oniguruma'
 
-import { wasmBinary } from '@codelexjs/engine-oniguruma/wasm-inlined'
-import js from '@codelexjs/langs/javascript'
-import ts from '@codelexjs/langs/typescript'
-import mtp from '@codelexjs/themes/material-theme-palenight'
-import nord from '@codelexjs/themes/nord'
+import { wasmBinary } from '@codelex/engine-oniguruma/wasm-inlined'
+import js from '@codelex/langs/javascript'
+import ts from '@codelex/langs/typescript'
+import mtp from '@codelex/themes/material-theme-palenight'
+import nord from '@codelex/themes/nord'
 import { describe, expect, it } from 'vitest'
 import { createHighlighterCore } from '../src'
 
@@ -28,7 +28,7 @@ describe('should', () => {
       themes: [nord],
       langs: [
         js,
-        import('@codelexjs/langs/c'),
+        import('@codelex/langs/c'),
       ],
       engine: createOnigurumaEngine({
         // https://github.com/WebAssembly/esm-integration/tree/main/proposals/esm-integration
@@ -36,8 +36,8 @@ describe('should', () => {
       }),
     })
 
-    await codelex.loadLanguage(() => import('@codelexjs/langs/python'))
-    await codelex.loadTheme(() => import('@codelexjs/themes/vitesse-light').then(m => m.default))
+    await codelex.loadLanguage(() => import('@codelex/langs/python'))
+    await codelex.loadTheme(() => import('@codelex/themes/vitesse-light').then(m => m.default))
 
     expect(codelex.getLoadedLanguages())
       .toMatchInlineSnapshot(`
@@ -65,7 +65,7 @@ describe('should', () => {
     using codelex = await createHighlighterCore({
       themes: [nord],
       langs: [
-        import('@codelexjs/langs/cpp'),
+        import('@codelex/langs/cpp'),
       ],
       engine: createJavaScriptRegexEngine(),
     })

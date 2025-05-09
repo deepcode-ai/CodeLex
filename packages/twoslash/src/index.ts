@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 import type { CreateTwoslashOptions } from 'twoslash'
 import type { ModuleResolutionKind } from 'typescript'
 import type { RendererRichOptions, TransformerTwoslashOptions } from './core'

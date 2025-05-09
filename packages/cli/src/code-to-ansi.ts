@@ -1,5 +1,5 @@
 import type { BundledLanguage, BundledTheme } from 'codelex'
-import { FontStyle } from '@codelexjs/vscode-textmate'
+import { FontStyle } from '@codelex/vscode-textmate'
 import c from 'ansis'
 import { codeToTokensBase, getSingletonHighlighter } from 'codelex'
 import { hexApplyAlpha } from './colors'

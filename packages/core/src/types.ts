@@ -1,1 +1,1 @@
-export * from '@codelexjs/types'
+export * from '@codelex/types'

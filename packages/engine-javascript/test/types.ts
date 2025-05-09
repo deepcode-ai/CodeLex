@@ -1,4 +1,4 @@
-import type { IOnigMatch } from '@codelexjs/vscode-textmate'
+import type { IOnigMatch } from '@codelex/vscode-textmate'
 
 export interface Execution {
   id: string

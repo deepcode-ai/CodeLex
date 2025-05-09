@@ -138,7 +138,7 @@ export default withMermaid(defineConfig({
         processHoverInfo(info) {
           return defaultHoverInfoProcessor(info)
             // Remove codelex_core namespace
-            .replace(/_codelexjs_core\w*\./g, '')
+            .replace(/_codeLex_core\w*\./g, '')
         },
         typesCache: createFileSystemTypesCache(),
       }),

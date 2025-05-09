@@ -7,7 +7,7 @@ import { precompileGrammar } from '../scripts/precompile'
 const isNode20andUp = process.version.replace(/^v/, '').split('.').map(Number)[0] >= 20
 
 it.runIf(isNode20andUp)('precompile', async () => {
-  const grammar = await import('@codelexjs/langs/yaml').then(m => m.default[0])
+  const grammar = await import('@codelex/langs/yaml').then(m => m.default[0])
   const precompiled = precompileGrammar(grammar)
   expect(
     await format(`export default ${toJsLiteral(precompiled)}`, {

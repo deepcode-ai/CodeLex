@@ -1,4 +1,4 @@
-import type { CodelexTransformer } from '@codelexjs/types'
+import type { CodelexTransformer } from '@codelex/types'
 
 export function parseMetaHighlightString(meta: string): number[] | null {
   if (!meta)
@@ -39,7 +39,7 @@ export function transformerMetaHighlight(
   } = options
 
   return {
-    name: '@codelexjs/transformers:meta-highlight',
+    name: '@codelex/transformers:meta-highlight',
     line(node, line) {
       if (!this.options.meta?.__raw) {
         return

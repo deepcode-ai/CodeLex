@@ -1,4 +1,4 @@
-import type { CodelexTransformer, CodelexTransformerContext } from '@codelexjs/core'
+import type { CodelexTransformer, CodelexTransformerContext } from '@codelex/core'
 import type { Element, Text } from 'hast'
 import type { ParsedComments } from './parse-comments'
 import { parseComments, v1ClearEndCommentPrefix } from './parse-comments'

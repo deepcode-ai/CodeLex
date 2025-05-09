@@ -1,4 +1,4 @@
-# @codelexjs/markdown-it
+# @codelex/markdown-it
 
 [markdown-it](https://markdown-it.github.io/) plugin for [codelex](https://github.com/deepcode-ai/codelex)
 

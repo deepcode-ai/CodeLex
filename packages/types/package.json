@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/types",
+  "name": "@codelex/types",
   "type": "module",
   "version": "3.4.0",
   "description": "Type definitions for Codelex",
@@ -31,7 +31,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/vscode-textmate": "catalog:prod",
+    "@codelex/vscode-textmate": "catalog:prod",
     "@types/hast": "catalog:types"
   }
 }

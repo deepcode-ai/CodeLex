@@ -1,4 +1,4 @@
-import type { FontStyle, IRawThemeSetting, StateStack } from '@codelexjs/vscode-textmate'
+import type { FontStyle, IRawThemeSetting, StateStack } from '@codelex/vscode-textmate'
 import type { SpecialLanguage } from './langs'
 import type { CodeOptionsThemes } from './options'
 import type { SpecialTheme, ThemeRegistrationAny } from './themes'

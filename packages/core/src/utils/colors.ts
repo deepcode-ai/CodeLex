@@ -1,4 +1,4 @@
-import type { ThemeRegistrationAny, TokenizeWithThemeOptions } from '@codelexjs/types'
+import type { ThemeRegistrationAny, TokenizeWithThemeOptions } from '@codelex/types'
 
 export function resolveColorReplacements(
   theme: ThemeRegistrationAny | string,

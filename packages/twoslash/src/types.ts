@@ -1,4 +1,4 @@
-import type { CodeToHastOptions, CodelexTransformerContext } from '@codelexjs/types'
+import type { CodeToHastOptions, CodelexTransformerContext } from '@codelex/types'
 import type { Element, ElementContent, Text } from 'hast'
 import type {
   NodeCompletion,
@@ -21,7 +21,7 @@ export type TwoslashCodelexReturn =
 
 export type TwoslashCodelexFunction = (code: string, lang?: string, options?: TwoslashExecuteOptions) => TwoslashCodelexReturn
 
-declare module '@codelexjs/core' {
+declare module '@codelex/core' {
   interface CodelexTransformerContextMeta {
     twoslash?: TwoslashCodelexReturn
   }

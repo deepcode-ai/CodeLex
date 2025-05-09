@@ -1,4 +1,4 @@
-# @codelexjs/vitepress-twoslash
+# @codelex/vitepress-twoslash
 
 Enable Twoslash support in VitePress.
 

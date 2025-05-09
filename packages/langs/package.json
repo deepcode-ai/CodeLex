@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/langs",
+  "name": "@codelex/langs",
   "type": "module",
   "version": "3.4.0",
   "description": "TextMate grammars for Codelex in ESM",
@@ -350,7 +350,7 @@
     "prepublishOnly": "nr prepare"
   },
   "dependencies": {
-    "@codelexjs/types": "workspace:*"
+    "@codelex/types": "workspace:*"
   },
   "devDependencies": {
     "tm-grammars": "catalog:inlined"

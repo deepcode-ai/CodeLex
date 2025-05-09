@@ -1,7 +1,7 @@
-import type { LanguageRegistration } from '@codelexjs/types'
-import { createOnigurumaEngine } from '@codelexjs/engine-oniguruma'
-import js from '@codelexjs/langs/javascript'
-import nord from '@codelexjs/themes/nord'
+import type { LanguageRegistration } from '@codelex/types'
+import { createOnigurumaEngine } from '@codelex/engine-oniguruma'
+import js from '@codelex/langs/javascript'
+import nord from '@codelex/themes/nord'
 
 import { createHighlighterCore } from 'codelex/core'
 // @ts-expect-error no types

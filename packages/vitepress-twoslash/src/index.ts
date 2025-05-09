@@ -2,7 +2,7 @@
 import type { CodelexTransformer } from 'codelex'
 import type { TwoslashExecuteOptions, TwoslashReturn } from 'twoslash'
 import type { VitePressPluginTwoslashOptions } from './types'
-import { createTransformerFactory } from '@codelexjs/twoslash/core'
+import { createTransformerFactory } from '@codelex/twoslash/core'
 import { removeTwoslashNotations } from 'twoslash'
 import { createTwoslasher } from 'twoslash-vue'
 import { rendererFloatingVue } from './renderer-floating-vue'
@@ -67,7 +67,7 @@ export function transformerTwoslash(options: VitePressPluginTwoslashOptions = {}
 
   return {
     ...twoslash,
-    name: '@codelexjs/vitepress-twoslash',
+    name: '@codelex/vitepress-twoslash',
     preprocess(code, options) {
       const cleanup = options.transformers?.find(i => i.name === 'vitepress:clean-up')
       if (cleanup)

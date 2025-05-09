@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/cli",
+  "name": "@codelex/cli",
   "type": "module",
   "version": "3.4.0",
   "description": "Codelex in the command line",
@@ -28,7 +28,7 @@
   "bin": {
     "codelex": "bin.mjs",
     "codelex-cli": "bin.mjs",
-    "@codelexjs/cli": "bin.mjs",
+    "@codelex/cli": "bin.mjs",
     "skat": "bin.mjs"
   },
   "files": [
@@ -41,7 +41,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/vscode-textmate": "catalog:prod",
+    "@codelex/vscode-textmate": "catalog:prod",
     "ansis": "catalog:prod",
     "cac": "catalog:prod",
     "codelex": "workspace:*"

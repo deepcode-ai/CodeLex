@@ -1,6 +1,6 @@
-import Codelex from '@codelexjs/markdown-it'
-import { transformerMetaHighlight } from '@codelexjs/transformers'
-import { rendererRich, transformerTwoslash } from '@codelexjs/twoslash'
+import Codelex from '@codelex/markdown-it'
+import { transformerMetaHighlight } from '@codelex/transformers'
+import { rendererRich, transformerTwoslash } from '@codelex/twoslash'
 import MarkdownIt from 'markdown-it'
 import { describe, expect, it } from 'vitest'
 

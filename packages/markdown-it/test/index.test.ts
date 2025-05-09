@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises'
-import { transformerMetaHighlight } from '@codelexjs/transformers'
+import { transformerMetaHighlight } from '@codelex/transformers'
 import MarkdownIt from 'markdown-it'
 import { createHighlighter } from 'codelex'
 import { expect, it } from 'vitest'

@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/markdown-it",
+  "name": "@codelex/markdown-it",
   "type": "module",
   "version": "3.4.0",
   "description": "markdown-it integration for codelex",
@@ -46,7 +46,7 @@
     "codelex": "workspace:*"
   },
   "devDependencies": {
-    "@codelexjs/transformers": "workspace:*",
+    "@codelex/transformers": "workspace:*",
     "@types/markdown-it": "catalog:types",
     "markdown-it-async": "catalog:integrations"
   }

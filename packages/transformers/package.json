@@ -1,5 +1,5 @@
 {
-  "name": "@codelexjs/transformers",
+  "name": "@codelex/transformers",
   "type": "module",
   "version": "3.4.0",
   "description": "Collective of common transformers transformers for Codelex",
@@ -14,7 +14,7 @@
   "bugs": "https://github.com/deepcode-ai/codelex/issues",
   "keywords": [
     "codelex",
-    "@codelexjs/transformers"
+    "@codelex/transformers"
   ],
   "sideEffects": false,
   "exports": {
@@ -32,7 +32,7 @@
     "prepublishOnly": "nr build"
   },
   "dependencies": {
-    "@codelexjs/core": "workspace:*",
-    "@codelexjs/types": "workspace:*"
+    "@codelex/core": "workspace:*",
+    "@codelex/types": "workspace:*"
   }
 }

@@ -11,7 +11,7 @@ describe('exports-snapshot', async () => {
   for (const pkg of packages) {
     if (pkg.private)
       continue
-    if (pkg.name === '@codelexjs/themes' || pkg.name === '@codelexjs/langs' || pkg.name === '@codelexjs/langs-precompiled')
+    if (pkg.name === '@codelex/themes' || pkg.name === '@codelex/langs' || pkg.name === '@codelex/langs-precompiled')
       continue
     it(`${pkg.name}`, async () => {
       const manifest = await getPackageExportsManifest({

@@ -10,17 +10,17 @@ import type {
   ThemedTokenScopeExplanation,
   ThemeRegistrationResolved,
   TokenizeWithThemeOptions,
-} from '@codelexjs/types'
+} from '@codelex/types'
 import type {
   FontStyle,
   IRawThemeSetting,
   StateStack,
-} from '@codelexjs/vscode-textmate'
+} from '@codelex/vscode-textmate'
 
 import type { Root } from 'hast'
-import { CodelexError } from '@codelexjs/types'
+import { CodelexError } from '@codelex/types'
 
-import { EncodedTokenMetadata, INITIAL } from '@codelexjs/vscode-textmate'
+import { EncodedTokenMetadata, INITIAL } from '@codelex/vscode-textmate'
 import { getGrammarStack, getLastGrammarStateFromMap, GrammarState as GrammarStateImpl, setLastGrammarStateToMap } from '../textmate/grammar-state'
 import { applyColorReplacements, isNoneTheme, isPlainLang, resolveColorReplacements, splitLines } from '../utils'
 import { tokenizeAnsiWithTheme } from './code-to-tokens-ansi'
